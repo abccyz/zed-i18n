@@ -2,7 +2,7 @@
 
 ## Repository
 
-Clone down the [Zed repository](https://github.com/zed-industries/zed).
+Clone down the [Zed repository](https://tvv.tw/https://github.com/zed-industries/zed).
 
 ## Dependencies
 

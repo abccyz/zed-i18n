@@ -2,12 +2,12 @@
 
 YAML support is available natively in Zed.
 
-- Tree-sitter: [zed-industries/tree-sitter-yaml](https://github.com/zed-industries/tree-sitter-yaml)
-- Language Server: [redhat-developer/yaml-language-server](https://github.com/redhat-developer/yaml-language-server)
+- Tree-sitter: [zed-industries/tree-sitter-yaml](https://tvv.tw/https://github.com/zed-industries/tree-sitter-yaml)
+- Language Server: [redhat-developer/yaml-language-server](https://tvv.tw/https://github.com/redhat-developer/yaml-language-server)
 
 ## Configuration
 
-You can configure various [yaml-language-server settings](https://github.com/redhat-developer/yaml-language-server?tab=readme-ov-file#language-server-settings) by adding them to your Zed settings.json in a `yaml-language-server` block under the `lsp` key. For example:
+You can configure various [yaml-language-server settings](https://tvv.tw/https://github.com/redhat-developer/yaml-language-server?tab=readme-ov-file#language-server-settings) by adding them to your Zed settings.json in a `yaml-language-server` block under the `lsp` key. For example:
 
 ```json
   "lsp": {
@@ -67,7 +67,7 @@ To use `yaml-language-server` instead of Prettier for YAML formatting, add the f
 
 By default yaml-language-server will attempt to determine the correct schema for a given yaml file and retrieve the appropriate JSON Schema from [Json Schema Store](https://schemastore.org/).
 
-You can override any auto-detected schema via the `schemas` settings key (demonstrated above) or by providing an [inlined schema](https://github.com/redhat-developer/yaml-language-server#using-inlined-schema) reference via a modeline comment at the top of your yaml file:
+You can override any auto-detected schema via the `schemas` settings key (demonstrated above) or by providing an [inlined schema](https://tvv.tw/https://github.com/redhat-developer/yaml-language-server#using-inlined-schema) reference via a modeline comment at the top of your yaml file:
 
 ```yaml
 # yaml-language-server: $schema=https://json.schemastore.org/github-action.json
@@ -95,7 +95,7 @@ You can disable the automatic detection and retrieval of schemas from the JSON S
 
 ## Custom Tags
 
-Yaml-language-server supports [custom tags](https://github.com/redhat-developer/yaml-language-server#adding-custom-tags) which can be used to inject custom application functionality at runtime into your yaml files.
+Yaml-language-server supports [custom tags](https://tvv.tw/https://github.com/redhat-developer/yaml-language-server#adding-custom-tags) which can be used to inject custom application functionality at runtime into your yaml files.
 
 For example Amazon CloudFormation YAML uses a number of custom tags, to support these you can add the following to your settings.json:
 

@@ -1,15 +1,15 @@
 # Elixir
 
-Elixir support is available through the [Elixir extension](https://github.com/zed-extensions/elixir).
+Elixir support is available through the [Elixir extension](https://tvv.tw/https://github.com/zed-extensions/elixir).
 
 - Tree-sitter:
-  - [elixir-lang/tree-sitter-elixir](https://github.com/elixir-lang/tree-sitter-elixir)
-  - [phoenixframework/tree-sitter-heex](https://github.com/phoenixframework/tree-sitter-heex)
+  - [elixir-lang/tree-sitter-elixir](https://tvv.tw/https://github.com/elixir-lang/tree-sitter-elixir)
+  - [phoenixframework/tree-sitter-heex](https://tvv.tw/https://github.com/phoenixframework/tree-sitter-heex)
 - Language servers:
-  - [elixir-lang/expert](https://github.com/elixir-lang/expert)
-  - [elixir-lsp/elixir-ls](https://github.com/elixir-lsp/elixir-ls)
-  - [elixir-tools/next-ls](https://github.com/elixir-tools/next-ls)
-  - [lexical-lsp/lexical](https://github.com/lexical-lsp/lexical)
+  - [elixir-lang/expert](https://tvv.tw/https://github.com/elixir-lang/expert)
+  - [elixir-lsp/elixir-ls](https://tvv.tw/https://github.com/elixir-lsp/elixir-ls)
+  - [elixir-tools/next-ls](https://tvv.tw/https://github.com/elixir-tools/next-ls)
+  - [lexical-lsp/lexical](https://tvv.tw/https://github.com/lexical-lsp/lexical)
 
 ## Choosing a language server
 
@@ -115,10 +115,10 @@ The following example disables dialyzer:
   }
 ```
 
-See [ElixirLS configuration settings](https://github.com/elixir-lsp/elixir-ls#elixirls-configuration-settings) for more options.
+See [ElixirLS configuration settings](https://tvv.tw/https://github.com/elixir-lsp/elixir-ls#elixirls-configuration-settings) for more options.
 
 ### HEEx
 
 Zed also supports HEEx templates. HEEx is a mix of [EEx](https://hexdocs.pm/eex/1.12.3/EEx.html) (Embedded Elixir) and HTML, and is used in Phoenix LiveView applications.
 
-- Tree-sitter: [phoenixframework/tree-sitter-heex](https://github.com/phoenixframework/tree-sitter-heex)
+- Tree-sitter: [phoenixframework/tree-sitter-heex](https://tvv.tw/https://github.com/phoenixframework/tree-sitter-heex)

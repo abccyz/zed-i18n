@@ -738,7 +738,7 @@ impl Vim {
 }
 
 // Motion handling is specified here:
-// https://github.com/vim/vim/blob/master/runtime/doc/motion.txt
+// https://tvv.tw/https://github.com/vim/vim/blob/master/runtime/doc/motion.txt
 impl Motion {
     fn default_kind(&self) -> MotionKind {
         use Motion::*;
@@ -1411,7 +1411,7 @@ impl Motion {
                 let first_non_blank_of_start_row = map
                     .line_indent_for_buffer_row(MultiBufferRow(start_point.row))
                     .raw_len();
-                // https://github.com/neovim/neovim/blob/ee143aaf65a0e662c42c636aa4a959682858b3e7/src/nvim/ops.c#L6178-L6203
+                // https://tvv.tw/https://github.com/neovim/neovim/blob/ee143aaf65a0e662c42c636aa4a959682858b3e7/src/nvim/ops.c#L6178-L6203
                 if end_point.column == 0 {
                     // If the motion is exclusive and the end of the motion is in column 1, the
                     // end of the motion is moved to the end of the previous line and the motion
@@ -1619,7 +1619,7 @@ fn up_down_buffer_rows(
     // This can happen when moving down (Bias::Right) and hitting an inlay hint.
     // Re-clip with opposite bias to stay on the intended line.
     //
-    // See: https://github.com/zed-industries/zed/issues/29134
+    // See: https://tvv.tw/https://github.com/zed-industries/zed/issues/29134
     if clipped_point.row() > point.row() {
         clipped_point = map.clip_point(point, Bias::Left);
     }
@@ -2379,7 +2379,7 @@ fn matching_tag(map: &DisplaySnapshot, head: DisplayPoint) -> Option<DisplayPoin
 }
 
 fn matching(map: &DisplaySnapshot, display_point: DisplayPoint) -> DisplayPoint {
-    // https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1200
+    // https://tvv.tw/https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1200
     let display_point = map.clip_at_line_end(display_point);
     let point = display_point.to_point(map);
     let offset = point.to_offset(&map.buffer_snapshot);
@@ -2484,7 +2484,7 @@ fn unmatched_forward(
     times: usize,
 ) -> DisplayPoint {
     for _ in 0..times {
-        // https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1245
+        // https://tvv.tw/https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1245
         let point = display_point.to_point(map);
         let offset = point.to_offset(&map.buffer_snapshot);
 
@@ -2525,7 +2525,7 @@ fn unmatched_backward(
     times: usize,
 ) -> DisplayPoint {
     for _ in 0..times {
-        // https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1239
+        // https://tvv.tw/https://github.com/vim/vim/blob/1d87e11a1ef201b26ed87585fba70182ad0c468a/runtime/doc/motion.txt#L1239
         let point = display_point.to_point(map);
         let offset = point.to_offset(&map.buffer_snapshot);
 

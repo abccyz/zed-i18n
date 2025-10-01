@@ -15,7 +15,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ## Setup
 
 ```sh
-git clone https://github.com/zed-industries/zed.git
+git clone https://tvv.tw/https://github.com/zed-industries/zed.git
 cp -RL zed/extensions/slash-commands-example .
 
 cd slash-commands-example/

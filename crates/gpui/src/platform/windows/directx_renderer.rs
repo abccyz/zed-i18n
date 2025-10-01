@@ -619,7 +619,7 @@ impl DirectXRenderer {
     }
 
     // Gamma ratios for brightening/darkening edges for better contrast
-    // https://github.com/microsoft/terminal/blob/1283c0f5b99a2961673249fa77c6b986efb5086c/src/renderer/atlas/dwrite.cpp#L50
+    // https://tvv.tw/https://github.com/microsoft/terminal/blob/1283c0f5b99a2961673249fa77c6b986efb5086c/src/renderer/atlas/dwrite.cpp#L50
     fn get_gamma_ratios(gamma: f32) -> [f32; 4] {
         const GAMMA_INCORRECT_TARGET_RATIOS: [[f32; 4]; 13] = [
             [0.0000 / 4.0, 0.0000 / 4.0, 0.0000 / 4.0, 0.0000 / 4.0], // gamma = 1.0
@@ -1585,14 +1585,14 @@ mod nvidia {
 
     use crate::with_dll_library;
 
-    // https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L180
+    // https://tvv.tw/https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L180
     const NVAPI_SHORT_STRING_MAX: usize = 64;
 
-    // https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L235
+    // https://tvv.tw/https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L235
     #[allow(non_camel_case_types)]
     type NvAPI_ShortString = [c_char; NVAPI_SHORT_STRING_MAX];
 
-    // https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L447
+    // https://tvv.tw/https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_lite_common.h#L447
     #[allow(non_camel_case_types)]
     type NvAPI_SYS_GetDriverAndBranchVersion_t = unsafe extern "C" fn(
         driver_version: *mut c_uint,
@@ -1610,7 +1610,7 @@ mod nvidia {
                 .ok_or_else(|| anyhow::anyhow!("Failed to get nvapi_QueryInterface address"))?;
             let nvapi_query: extern "C" fn(u32) -> *mut () = std::mem::transmute(nvapi_query_addr);
 
-            // https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_interface.h#L41
+            // https://tvv.tw/https://github.com/NVIDIA/nvapi/blob/7cb76fce2f52de818b3da497af646af1ec16ce27/nvapi_interface.h#L41
             let nvapi_get_driver_version_ptr = nvapi_query(0x2926aaad);
             if nvapi_get_driver_version_ptr.is_null() {
                 anyhow::bail!("Failed to get NVIDIA driver version function pointer");
@@ -1652,10 +1652,10 @@ mod amd {
 
     use crate::with_dll_library;
 
-    // https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L145
+    // https://tvv.tw/https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L145
     const AGS_CURRENT_VERSION: i32 = (6 << 22) | (3 << 12);
 
-    // https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L204
+    // https://tvv.tw/https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L204
     // This is an opaque type, using struct to represent it properly for FFI
     #[repr(C)]
     struct AGSContext {
@@ -1670,7 +1670,7 @@ mod amd {
         pub devices: *mut c_void,
     }
 
-    // https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L429
+    // https://tvv.tw/https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L429
     #[allow(non_camel_case_types)]
     type agsInitialize_t = unsafe extern "C" fn(
         version: c_int,
@@ -1679,7 +1679,7 @@ mod amd {
         gpu_info: *mut AGSGPUInfo,
     ) -> c_int;
 
-    // https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L436
+    // https://tvv.tw/https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/blob/5d8812d703d0335741b6f7ffc37838eeb8b967f7/ags_lib/inc/amd_ags.h#L436
     #[allow(non_camel_case_types)]
     type agsDeInitialize_t = unsafe extern "C" fn(context: *mut AGSContext) -> c_int;
 

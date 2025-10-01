@@ -6745,7 +6745,7 @@ outline: struct OutlineEntryExcerpt
         });
     }
 
-    // Based on https://github.com/rust-lang/rust-analyzer/
+    // Based on https://tvv.tw/https://github.com/rust-lang/rust-analyzer/
     async fn populate_with_test_ra_project(fs: &FakeFs, root: &str) {
         fs.insert_tree(
             root,

@@ -2,19 +2,19 @@
 
 [Luau](https://luau.org/) is a fast, small, safe, gradually typed, embeddable scripting language derived from Lua. Luau was developed by Roblox and is available under the MIT license.
 
-Luau language support in Zed is provided by the community-maintained [Luau extension](https://github.com/4teapo/zed-luau).
-Report issues to: [https://github.com/4teapo/zed-luau/issues](https://github.com/4teapo/zed-luau/issues)
+Luau language support in Zed is provided by the community-maintained [Luau extension](https://tvv.tw/https://github.com/4teapo/zed-luau).
+Report issues to: [https://tvv.tw/https://github.com/4teapo/zed-luau/issues](https://tvv.tw/https://github.com/4teapo/zed-luau/issues)
 
-- Tree-sitter: [4teapo/tree-sitter-luau](https://github.com/4teapo/tree-sitter-luau)
-- Language Server: [JohnnyMorganz/luau-lsp](https://github.com/JohnnyMorganz/luau-lsp)
+- Tree-sitter: [4teapo/tree-sitter-luau](https://tvv.tw/https://github.com/4teapo/tree-sitter-luau)
+- Language Server: [JohnnyMorganz/luau-lsp](https://tvv.tw/https://github.com/JohnnyMorganz/luau-lsp)
 
 ## Configuration
 
-Configuration instructions are available in the [Luau Zed Extension README](https://github.com/4teapo/zed-luau).
+Configuration instructions are available in the [Luau Zed Extension README](https://tvv.tw/https://github.com/4teapo/zed-luau).
 
 ## Formatting
 
-To support automatically formatting your code, you can use [JohnnyMorganz/StyLua](https://github.com/JohnnyMorganz/StyLua), a Lua code formatter.
+To support automatically formatting your code, you can use [JohnnyMorganz/StyLua](https://tvv.tw/https://github.com/JohnnyMorganz/StyLua), a Lua code formatter.
 
 Install with:
 

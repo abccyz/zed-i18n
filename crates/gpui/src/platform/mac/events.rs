@@ -109,7 +109,7 @@ impl PlatformInput {
             let event_type = native_event.eventType();
 
             // Filter out event types that aren't in the NSEventType enum.
-            // See https://github.com/servo/cocoa-rs/issues/155#issuecomment-323482792 for details.
+            // See https://tvv.tw/https://github.com/servo/cocoa-rs/issues/155#issuecomment-323482792 for details.
             match event_type as u64 {
                 0 | 21 | 32 | 33 | 35 | 36 | 37 => {
                     return None;
@@ -469,10 +469,10 @@ const SHIFT_MOD: u32 = 2;
 const OPTION_MOD: u32 = 8;
 
 fn chars_for_modified_key(code: CGKeyCode, modifiers: u32) -> String {
-    // Values from: https://github.com/phracker/MacOSX-SDKs/blob/master/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h#L126
+    // Values from: https://tvv.tw/https://github.com/phracker/MacOSX-SDKs/blob/master/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h#L126
     // shifted >> 8 for UCKeyTranslate
     const CG_SPACE_KEY: u16 = 49;
-    // https://github.com/phracker/MacOSX-SDKs/blob/master/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Headers/UnicodeUtilities.h#L278
+    // https://tvv.tw/https://github.com/phracker/MacOSX-SDKs/blob/master/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Headers/UnicodeUtilities.h#L278
     #[allow(non_upper_case_globals)]
     const kUCKeyActionDown: u16 = 0;
     #[allow(non_upper_case_globals)]

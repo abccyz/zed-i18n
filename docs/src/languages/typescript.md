@@ -2,10 +2,10 @@
 
 TypeScript and TSX support are available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-typescript](https://github.com/tree-sitter/tree-sitter-typescript)
-- Language Server: [yioneko/vtsls](https://github.com/yioneko/vtsls)
-- Alternate Language Server: [typescript-language-server/typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
-- Debug Adapter: [vscode-js-debug](https://github.com/microsoft/vscode-js-debug)
+- Tree-sitter: [tree-sitter/tree-sitter-typescript](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-typescript)
+- Language Server: [yioneko/vtsls](https://tvv.tw/https://github.com/yioneko/vtsls)
+- Alternate Language Server: [typescript-language-server/typescript-language-server](https://tvv.tw/https://github.com/typescript-language-server/typescript-language-server)
+- Debug Adapter: [vscode-js-debug](https://tvv.tw/https://github.com/microsoft/vscode-js-debug)
 
 <!--
 TBD: Document the difference between Language servers
@@ -13,8 +13,8 @@ TBD: Document the difference between Language servers
 
 ## Language servers
 
-By default Zed uses [vtsls](https://github.com/yioneko/vtsls) for TypeScript, TSX, and JavaScript files.
-You can configure the use of [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server) per language in your settings file:
+By default Zed uses [vtsls](https://tvv.tw/https://github.com/yioneko/vtsls) for TypeScript, TSX, and JavaScript files.
+You can configure the use of [typescript-language-server](https://tvv.tw/https://github.com/typescript-language-server/typescript-language-server) per language in your settings file:
 
 ```json
 {
@@ -91,7 +91,7 @@ You can override these settings in your Zed `settings.json` when using `typescri
 }
 ```
 
-See [typescript-language-server inlayhints documentation](https://github.com/typescript-language-server/typescript-language-server?tab=readme-ov-file#inlay-hints-textdocumentinlayhint) for more information.
+See [typescript-language-server inlayhints documentation](https://tvv.tw/https://github.com/typescript-language-server/typescript-language-server?tab=readme-ov-file#inlay-hints-textdocumentinlayhint) for more information.
 
 When using `vtsls`:
 

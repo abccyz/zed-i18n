@@ -1,16 +1,16 @@
 # Ruby
 
-Ruby support is available through the [Ruby extension](https://github.com/zed-extensions/ruby).
+Ruby support is available through the [Ruby extension](https://tvv.tw/https://github.com/zed-extensions/ruby).
 
 - Tree-sitters:
-  - [tree-sitter-ruby](https://github.com/tree-sitter/tree-sitter-ruby)
-  - [tree-sitter-embedded-template](https://github.com/tree-sitter/tree-sitter-embedded-template)
+  - [tree-sitter-ruby](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-ruby)
+  - [tree-sitter-embedded-template](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-embedded-template)
 - Language Servers:
-  - [ruby-lsp](https://github.com/Shopify/ruby-lsp)
-  - [solargraph](https://github.com/castwide/solargraph)
-  - [rubocop](https://github.com/rubocop/rubocop)
+  - [ruby-lsp](https://tvv.tw/https://github.com/Shopify/ruby-lsp)
+  - [solargraph](https://tvv.tw/https://github.com/castwide/solargraph)
+  - [rubocop](https://tvv.tw/https://github.com/rubocop/rubocop)
   - [Herb](https://herb-tools.dev)
-- Debug Adapter: [`rdbg`](https://github.com/ruby/debug)
+- Debug Adapter: [`rdbg`](https://tvv.tw/https://github.com/ruby/debug)
 
 The Ruby extension also provides support for ERB files.
 
@@ -18,23 +18,23 @@ The Ruby extension also provides support for ERB files.
 
 There are multiple language servers available for Ruby. Zed supports the two following:
 
-- [solargraph](https://github.com/castwide/solargraph)
-- [ruby-lsp](https://github.com/Shopify/ruby-lsp)
+- [solargraph](https://tvv.tw/https://github.com/castwide/solargraph)
+- [ruby-lsp](https://tvv.tw/https://github.com/Shopify/ruby-lsp)
 
 They both have an overlapping feature set of autocomplete, diagnostics, code actions, etc. and it's up to you to decide which one you want to use. Note that you can't use both at the same time.
 
 In addition to these two language servers, Zed also supports:
 
-- [rubocop](https://github.com/rubocop/rubocop) which is a static code analyzer and linter for Ruby. Under the hood, it's also used by Zed as a language server, but its functionality is complimentary to that of solargraph and ruby-lsp.
+- [rubocop](https://tvv.tw/https://github.com/rubocop/rubocop) which is a static code analyzer and linter for Ruby. Under the hood, it's also used by Zed as a language server, but its functionality is complimentary to that of solargraph and ruby-lsp.
 - [sorbet](https://sorbet.org/) which is a static type checker for Ruby with a custom gradual type system.
-- [steep](https://github.com/soutaro/steep) which is a static type checker for Ruby that leverages Ruby Signature (RBS).
+- [steep](https://tvv.tw/https://github.com/soutaro/steep) which is a static type checker for Ruby that leverages Ruby Signature (RBS).
 - [Herb](https://herb-tools.dev) which is a language server for ERB files.
 
 When configuring a language server, it helps to open the LSP Logs window using the 'dev: Open Language Server Logs' command. You can then choose the corresponding language instance to see any logged information.
 
 ## Configuring a language server
 
-The [Ruby extension](https://github.com/zed-extensions/ruby) offers both `solargraph` and `ruby-lsp` language server support.
+The [Ruby extension](https://tvv.tw/https://github.com/zed-extensions/ruby) offers both `solargraph` and `ruby-lsp` language server support.
 
 ### Language Server Activation
 
@@ -150,7 +150,7 @@ You can pass Ruby LSP configuration to `initialization_options`, e.g.
 }
 ```
 
-LSP `settings` and `initialization_options` can also be project-specific. For example to use [standardrb/standard](https://github.com/standardrb/standard) as a formatter and linter for a particular project, add this to a `.zed/settings.json` inside your project repo:
+LSP `settings` and `initialization_options` can also be project-specific. For example to use [standardrb/standard](https://tvv.tw/https://github.com/standardrb/standard) as a formatter and linter for a particular project, add this to a `.zed/settings.json` inside your project repo:
 
 ```json
 {
@@ -220,7 +220,7 @@ For all aspects of installing Sorbet, setting it up in your project, and configu
 
 ## Setting up Steep
 
-[Steep](https://github.com/soutaro/steep) is a static type checker for Ruby that uses RBS files to define types.
+[Steep](https://tvv.tw/https://github.com/soutaro/steep) is a static type checker for Ruby that uses RBS files to define types.
 
 To enable Steep, add `\"steep\"` to the `language_servers` list for Ruby in your `settings.json`. You may need to adjust the order or disable other LSPs depending on your desired setup.
 
@@ -246,7 +246,7 @@ To enable Steep, add `\"steep\"` to the `language_servers` list for Ruby in your
 
 ## Using the Tailwind CSS Language Server with Ruby
 
-It's possible to use the [Tailwind CSS Language Server](https://github.com/tailwindlabs/tailwindcss-intellisense/tree/HEAD/packages/tailwindcss-language-server#readme) in Ruby and ERB files.
+It's possible to use the [Tailwind CSS Language Server](https://tvv.tw/https://github.com/tailwindlabs/tailwindcss-intellisense/tree/HEAD/packages/tailwindcss-language-server#readme) in Ruby and ERB files.
 
 In order to do that, you need to configure the language server so that it knows about where to look for CSS classes in Ruby/ERB files by adding the following to your `settings.json`:
 
@@ -352,7 +352,7 @@ Similar task syntax can be used for other test frameworks such as `quickdraw` or
 
 ## Debugging
 
-The Ruby extension provides a debug adapter for debugging Ruby code. Zed's name for the adapter (in the UI and `debug.json`) is `rdbg`, and under the hood, it uses the [`debug`](https://github.com/ruby/debug) gem. The extension uses the [same activation logic](#language-server-activation) as the language servers.
+The Ruby extension provides a debug adapter for debugging Ruby code. Zed's name for the adapter (in the UI and `debug.json`) is `rdbg`, and under the hood, it uses the [`debug`](https://tvv.tw/https://github.com/ruby/debug) gem. The extension uses the [same activation logic](#language-server-activation) as the language servers.
 
 ### Examples
 

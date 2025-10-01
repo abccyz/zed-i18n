@@ -79,15 +79,15 @@ h_flex()
 - `Pane`: An area in the `Center` where we can place items, such as an editor, multi-buffer or terminal (see image below).
 - `Panel`: An `Entity` implementing the `Panel` trait. These can be placed in a `Dock`. In the image below we see the: `ProjectPanel` in the left dock, the `DebugPanel` in the bottom dock, and `AgentPanel` in the right dock. Note `Editor` does not implement `Panel` and hence is not a `Panel`.
 - `Dock`: A UI element similar to a `Pane` which can be opened and hidden. There can be up to 3 docks open at a time, left right and below the center. A dock contains one or more `Panel`s not `Pane`s. (see image).
-  <img width="1921" height="1080" alt="image" src="https://github.com/user-attachments/assets/2cb1170e-2850-450d-89bb-73622b5d07b2" />
+  <img width="1921" height="1080" alt="image" src="https://tvv.tw/https://github.com/user-attachments/assets/2cb1170e-2850-450d-89bb-73622b5d07b2" />
 
 - `Project`: One or more `Worktree`s
 - `Worktree`: Represents either local or remote files.
-  <img width="552" height="1118" alt="image" src="https://github.com/user-attachments/assets/da5c58e4-b02e-4038-9736-27e3509fdbfa" />
+  <img width="552" height="1118" alt="image" src="https://tvv.tw/https://github.com/user-attachments/assets/da5c58e4-b02e-4038-9736-27e3509fdbfa" />
 
 - [Multibuffer](https://zed.dev/docs/multibuffers): A list of Editors, a multi-buffer allows editing multiple files simultaneously. A multi-buffer opens when an operation in Zed returns multiple locations, examples: _search_ or _go to definition_. See project search in the image below.
 
-<img width="800" height="886" alt="image" src="https://github.com/user-attachments/assets/d59dcecd-8ab6-4172-8fb6-b1fc3c3eaf9d" />
+<img width="800" height="886" alt="image" src="https://tvv.tw/https://github.com/user-attachments/assets/d59dcecd-8ab6-4172-8fb6-b1fc3c3eaf9d" />
 
 ## Editor
 

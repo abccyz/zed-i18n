@@ -97,5 +97,5 @@ async function main() {
     console.log(`- ${tag}`);
   }
   console.log("Remove items that have already been mentioned in the current published stable versions.");
-  console.log("https://github.com/zed-industries/zed/releases?q=prerelease%3Afalse&expanded=true");
+  console.log("https://tvv.tw/https://github.com/zed-industries/zed/releases?q=prerelease%3Afalse&expanded=true");
 }

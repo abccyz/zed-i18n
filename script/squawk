@@ -18,7 +18,7 @@ SQUAWK_ARGS="--assume-in-transaction --config script/lib/squawk.toml"
 pkgutil --pkg-info com.apple.pkg.RosettaUpdateAuto || /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 # When bootstrapping a brand new CI machine, the `target` directory may not exist yet.
 mkdir -p "./target"
-curl -L -o "$SQUAWK_BIN" "https://github.com/sbdchd/squawk/releases/download/v$SQUAWK_VERSION/squawk-darwin-x86_64"
+curl -L -o "$SQUAWK_BIN" "https://tvv.tw/https://github.com/sbdchd/squawk/releases/download/v$SQUAWK_VERSION/squawk-darwin-x86_64"
 chmod +x "$SQUAWK_BIN"
 
 if [ -n "$SQUAWK_GITHUB_TOKEN" ]; then

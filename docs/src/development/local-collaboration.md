@@ -46,7 +46,7 @@ You can install these dependencies natively or run them under Docker.
    brew install livekit foreman
    ```
 
-- Follow the steps in the [collab README](https://github.com/zed-industries/zed/blob/main/crates/collab/README.md) to configure the Postgres database for integration tests
+- Follow the steps in the [collab README](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/crates/collab/README.md) to configure the Postgres database for integration tests
 
 Alternatively, if you have [Docker](https://www.docker.com/) installed you can bring up all the `collab` dependencies using Docker Compose.
 
@@ -61,7 +61,7 @@ Alternatively, if you have [Docker](https://www.docker.com/) installed you can b
    sudo zypper install postgresql postgresql-server   # OpenSUSE
    ```
 
-2. Install [Livekit](https://github.com/livekit/livekit-cli)
+2. Install [Livekit](https://tvv.tw/https://github.com/livekit/livekit-cli)
 
    ```sh
    curl -sSL https://get.livekit.io/cli | bash
@@ -74,7 +74,7 @@ Alternatively, if you have [Docker](https://www.docker.com/) installed you can b
 > This section is still in development. The instructions are not yet complete.
 
 - Install [Postgres](https://www.postgresql.org/download/windows/)
-- Install [Livekit](https://github.com/livekit/livekit), optionally you can add the `livekit-server` binary to your `PATH`.
+- Install [Livekit](https://tvv.tw/https://github.com/livekit/livekit), optionally you can add the `livekit-server` binary to your `PATH`.
 
 Alternatively, if you have [Docker](https://www.docker.com/) installed you can bring up all the `collab` dependencies using Docker Compose.
 
@@ -190,7 +190,7 @@ Note that this requires `node.exe` to be in your `PATH`.
 
 If you want to run your own version of the zed collaboration service, you can, but note that this is still under development, and there is no support for authentication nor extensions.
 
-Configuration is done through environment variables. By default it will read the configuration from [`.env.toml`](https://github.com/zed-industries/zed/blob/main/crates/collab/.env.toml) and you should use that as a guide for setting this up.
+Configuration is done through environment variables. By default it will read the configuration from [`.env.toml`](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/crates/collab/.env.toml) and you should use that as a guide for setting this up.
 
 By default Zed assumes that the DATABASE_URL is a Postgres database, but you can make it use Sqlite by compiling with `--features sqlite` and using a sqlite DATABASE_URL with `?mode=rwc`.
 

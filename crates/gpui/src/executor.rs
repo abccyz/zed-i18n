@@ -480,7 +480,7 @@ impl ForegroundExecutor {
 /// Variant of `async_task::spawn_local` that includes the source location of the spawn in panics.
 ///
 /// Copy-modified from:
-/// <https://github.com/smol-rs/async-task/blob/ca9dbe1db9c422fd765847fa91306e30a6bb58a9/src/runnable.rs#L405>
+/// <https://tvv.tw/https://github.com/smol-rs/async-task/blob/ca9dbe1db9c422fd765847fa91306e30a6bb58a9/src/runnable.rs#L405>
 #[track_caller]
 fn spawn_local_with_source_location<Fut, S>(
     future: Fut,

@@ -2,14 +2,14 @@
 
 Python support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter-python](https://github.com/zed-industries/tree-sitter-python)
+- Tree-sitter: [tree-sitter-python](https://tvv.tw/https://github.com/zed-industries/tree-sitter-python)
 - Language Servers:
-  - [DetachHead/basedpyright](https://github.com/DetachHead/basedpyright)
-  - [astral-sh/ruff](https://github.com/astral-sh/ruff)
-  - [astral-sh/ty](https://github.com/astral-sh/ty)
-  - [microsoft/pyright](https://github.com/microsoft/pyright)
-  - [python-lsp/python-lsp-server](https://github.com/python-lsp/python-lsp-server) (PyLSP)
-- Debug Adapter: [debugpy](https://github.com/microsoft/debugpy)
+  - [DetachHead/basedpyright](https://tvv.tw/https://github.com/DetachHead/basedpyright)
+  - [astral-sh/ruff](https://tvv.tw/https://github.com/astral-sh/ruff)
+  - [astral-sh/ty](https://tvv.tw/https://github.com/astral-sh/ty)
+  - [microsoft/pyright](https://tvv.tw/https://github.com/microsoft/pyright)
+  - [python-lsp/python-lsp-server](https://tvv.tw/https://github.com/python-lsp/python-lsp-server) (PyLSP)
+- Debug Adapter: [debugpy](https://tvv.tw/https://github.com/microsoft/debugpy)
 
 ## Install Python
 
@@ -67,13 +67,13 @@ Zed includes an integrated terminal, accessible from the bottom panel. If Zed de
 
 ## Configure Python Language Servers in Zed
 
-Zed provides several Python language servers out of the box. By default, [basedpyright](https://github.com/DetachHead/basedpyright) is the primary language server, and [Ruff](https://github.com/astral-sh/ruff) is used for formatting and linting.
+Zed provides several Python language servers out of the box. By default, [basedpyright](https://tvv.tw/https://github.com/DetachHead/basedpyright) is the primary language server, and [Ruff](https://tvv.tw/https://github.com/astral-sh/ruff) is used for formatting and linting.
 
 Other built-in language servers are:
 
 - [Ty](https://docs.astral.sh/ty/)&mdash;Up-and-coming language server from Astral, built for speed.
-- [Pyright](https://github.com/microsoft/pyright)&mdash;The basis for basedpyright.
-- [PyLSP](https://github.com/python-lsp/python-lsp-server)&mdash;A plugin-based language server that integrates with tools like `pycodestyle`, `autopep8`, and `yapf`.
+- [Pyright](https://tvv.tw/https://github.com/microsoft/pyright)&mdash;The basis for basedpyright.
+- [PyLSP](https://tvv.tw/https://github.com/python-lsp/python-lsp-server)&mdash;A plugin-based language server that integrates with tools like `pycodestyle`, `autopep8`, and `yapf`.
 
 These are disabled by default, but can be enabled in your settings. For example:
 
@@ -153,9 +153,9 @@ Here's an example `pyrightconfig.json` file that configures basedpyright to use 
 
 ### PyLSP
 
-[python-lsp-server](https://github.com/python-lsp/python-lsp-server/), more commonly known as PyLSP, by default integrates with a number of external tools (autopep8, mccabe, pycodestyle, yapf) while others are optional and must be explicitly enabled and configured (flake8, pylint).
+[python-lsp-server](https://tvv.tw/https://github.com/python-lsp/python-lsp-server/), more commonly known as PyLSP, by default integrates with a number of external tools (autopep8, mccabe, pycodestyle, yapf) while others are optional and must be explicitly enabled and configured (flake8, pylint).
 
-See [Python Language Server Configuration](https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md) for more.
+See [Python Language Server Configuration](https://tvv.tw/https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md) for more.
 
 ## Virtual Environments
 

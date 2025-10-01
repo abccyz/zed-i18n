@@ -477,7 +477,7 @@ impl LanguageModel for OllamaLanguageModel {
         _cx: &App,
     ) -> BoxFuture<'static, Result<u64>> {
         // There is no endpoint for this _yet_ in Ollama
-        // see: https://github.com/ollama/ollama/issues/1716 and https://github.com/ollama/ollama/issues/3582
+        // see: https://tvv.tw/https://github.com/ollama/ollama/issues/1716 and https://tvv.tw/https://github.com/ollama/ollama/issues/3582
         let token_count = request
             .messages
             .iter()

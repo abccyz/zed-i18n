@@ -371,7 +371,10 @@ impl ProposedChangesEditorToolbar {
 
 impl Render for ProposedChangesEditorToolbar {
     fn render(&mut self, window: &mut Window, cx: &mut Context<Self>) -> impl IntoElement {
-        let button_like = ButtonLike::new("apply-changes").child(Label::new("Apply All"));
+        let button_like = ButtonLike::new("apply-changes").child(Label::new(localization::shared(
+            "command.apply_all",
+            "Apply All",
+        )));
 
         match &self.current_editor {
             Some(editor) => {

@@ -47,9 +47,9 @@ Globs in Zed are case-sensitive, so `*.c` will not match `main.C` (even on case-
 
 ### Matching directories
 
-If you wanted to search the [zed repository](https://github.com/zed-industries/zed) for examples of [Configuring Language Servers](https://zed.dev/docs/configuring-languages#configuring-language-servers) (under `"lsp"` in Zed settings.json) you could search for `"lsp"` and in the "Include" filter specify `docs/**/*.md`. This would only match files whose path was under the `docs` directory or any nested subdirectories `**/` of that folder with a filename that ends in `.md`.
+If you wanted to search the [zed repository](https://tvv.tw/https://github.com/zed-industries/zed) for examples of [Configuring Language Servers](https://zed.dev/docs/configuring-languages#configuring-language-servers) (under `"lsp"` in Zed settings.json) you could search for `"lsp"` and in the "Include" filter specify `docs/**/*.md`. This would only match files whose path was under the `docs` directory or any nested subdirectories `**/` of that folder with a filename that ends in `.md`.
 
-If instead you wanted to restrict yourself only to [Zed Language-Specific Documentation](https://zed.dev/docs/languages) pages you could define a narrower pattern of: `docs/src/languages/*.md` this would match [`docs/src/languages/rust.md`](https://github.com/zed-industries/zed/blob/main/docs/src/languages/rust.md) and [`docs/src/languages/cpp.md`](https://github.com/zed-industries/zed/blob/main/docs/src/languages/cpp.md) but not [`docs/src/configuring-languages.md`](https://github.com/zed-industries/zed/blob/main/docs/src/configuring-languages.md).
+If instead you wanted to restrict yourself only to [Zed Language-Specific Documentation](https://zed.dev/docs/languages) pages you could define a narrower pattern of: `docs/src/languages/*.md` this would match [`docs/src/languages/rust.md`](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/docs/src/languages/rust.md) and [`docs/src/languages/cpp.md`](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/docs/src/languages/cpp.md) but not [`docs/src/configuring-languages.md`](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/docs/src/configuring-languages.md).
 
 ### Implicit Wildcards
 
@@ -73,7 +73,7 @@ While globs in Zed are implemented as described above, when writing code using g
 - [macOS fnmatch](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/fnmatch.3.html) (BSD C Standard Library)
 - [Linux fnmatch](https://www.gnu.org/software/libc/manual/html_node/Wildcard-Matching.html) (GNU C Standard Library)
 - [POSIX fnmatch](https://pubs.opengroup.org/onlinepubs/9699919799/functions/fnmatch.html) (POSIX Specification)
-- [node-glob](https://github.com/isaacs/node-glob) (Node.js `glob` package)
+- [node-glob](https://tvv.tw/https://github.com/isaacs/node-glob) (Node.js `glob` package)
 - [Python glob](https://docs.python.org/3/library/glob.html) (Python Standard Library)
 - [Golang glob](https://pkg.go.dev/path/filepath#Match) (Go Standard Library)
 - [gitignore patterns](https://git-scm.com/docs/gitignore) (Gitignore Pattern Format)

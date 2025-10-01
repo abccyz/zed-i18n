@@ -137,7 +137,7 @@ pub enum AssetKind {
 
 pub fn build_asset_url(repo_name_with_owner: &str, tag: &str, kind: AssetKind) -> Result<String> {
     let mut url = Url::parse(&format!(
-        "https://github.com/{repo_name_with_owner}/archive/refs/tags",
+        "https://tvv.tw/https://github.com/{repo_name_with_owner}/archive/refs/tags",
     ))?;
     // We're pushing this here, because tags may contain `/` and other characters
     // that need to be escaped.
@@ -167,13 +167,13 @@ mod tests {
         let tarball = build_asset_url(repo_name_with_owner, tag, AssetKind::TarGz).unwrap();
         assert_eq!(
             tarball,
-            "https://github.com/microsoft/vscode-eslint/archive/refs/tags/release%2F2.3.5.tar.gz"
+            "https://tvv.tw/https://github.com/microsoft/vscode-eslint/archive/refs/tags/release%2F2.3.5.tar.gz"
         );
 
         let zip = build_asset_url(repo_name_with_owner, tag, AssetKind::Zip).unwrap();
         assert_eq!(
             zip,
-            "https://github.com/microsoft/vscode-eslint/archive/refs/tags/release%2F2.3.5.zip"
+            "https://tvv.tw/https://github.com/microsoft/vscode-eslint/archive/refs/tags/release%2F2.3.5.zip"
         );
     }
 }

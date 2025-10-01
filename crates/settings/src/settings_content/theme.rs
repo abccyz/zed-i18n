@@ -152,7 +152,7 @@ pub enum ThemeMode {
 }
 
 /// Specifies the density of the UI.
-/// Note: This setting is still experimental. See [this tracking issue](https://github.com/zed-industries/zed/issues/18078)
+/// Note: This setting is still experimental. See [this tracking issue](https://tvv.tw/https://github.com/zed-industries/zed/issues/18078)
 #[derive(
     Debug,
     Default,

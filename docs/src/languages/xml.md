@@ -1,8 +1,8 @@
 # XML
 
-XML support is available through the [XML extension](https://github.com/sweetppro/zed-xml/).
+XML support is available through the [XML extension](https://tvv.tw/https://github.com/sweetppro/zed-xml/).
 
-- Tree-sitter: [tree-sitter-grammars/tree-sitter-xml](https://github.com/tree-sitter-grammars/tree-sitter-xml)
+- Tree-sitter: [tree-sitter-grammars/tree-sitter-xml](https://tvv.tw/https://github.com/tree-sitter-grammars/tree-sitter-xml)
 
 ## Configuration
 

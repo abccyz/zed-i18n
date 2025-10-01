@@ -5,8 +5,8 @@ use gpui::actions;
 // to be called from main.
 //
 // These may provide relevant context:
-// https://github.com/rust-lang/rust/issues/47384
-// https://github.com/mmastrac/rust-ctor/issues/280
+// https://tvv.tw/https://github.com/rust-lang/rust/issues/47384
+// https://tvv.tw/https://github.com/mmastrac/rust-ctor/issues/280
 pub fn init() {}
 
 actions!(

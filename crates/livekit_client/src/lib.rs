@@ -12,6 +12,7 @@ pub use record::CaptureInput;
 #[cfg(not(any(
     test,
     feature = "test-support",
+    feature = "disable-livekit",
     all(target_os = "windows", target_env = "gnu"),
     target_os = "freebsd"
 )))]
@@ -19,6 +20,7 @@ mod livekit_client;
 #[cfg(not(any(
     test,
     feature = "test-support",
+    feature = "disable-livekit",
     all(target_os = "windows", target_env = "gnu"),
     target_os = "freebsd"
 )))]
@@ -32,6 +34,7 @@ pub use livekit_client::*;
 #[cfg(any(
     test,
     feature = "test-support",
+    feature = "disable-livekit",
     all(target_os = "windows", target_env = "gnu"),
     target_os = "freebsd"
 ))]
@@ -39,6 +42,7 @@ mod mock_client;
 #[cfg(any(
     test,
     feature = "test-support",
+    feature = "disable-livekit",
     all(target_os = "windows", target_env = "gnu"),
     target_os = "freebsd"
 ))]
@@ -46,6 +50,7 @@ pub mod test;
 #[cfg(any(
     test,
     feature = "test-support",
+    feature = "disable-livekit",
     all(target_os = "windows", target_env = "gnu"),
     target_os = "freebsd"
 ))]

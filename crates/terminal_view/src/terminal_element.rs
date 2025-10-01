@@ -501,7 +501,7 @@ impl TerminalElement {
     /// and borders where color matching with adjacent backgrounds is critical.
     /// Regular icons (git, folders, etc.) are excluded as they need to remain readable.
     ///
-    /// Fixes https://github.com/zed-industries/zed/issues/34234
+    /// Fixes https://tvv.tw/https://github.com/zed-industries/zed/issues/34234
     fn is_decorative_character(ch: char) -> bool {
         matches!(
             ch as u32,
@@ -951,7 +951,7 @@ impl Element for TerminalElement {
                     let mut size = bounds.size;
                     size.width -= gutter;
 
-                    // https://github.com/zed-industries/zed/issues/2750
+                    // https://tvv.tw/https://github.com/zed-industries/zed/issues/2750
                     // if the terminal is one column wide, rendering 🦀
                     // causes alacritty to misbehave.
                     if size.width < cell_width * 2.0 {

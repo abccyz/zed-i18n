@@ -2,13 +2,13 @@
 
 R support is available via multiple R Zed extensions:
 
-- [ocsmit/zed-r](https://github.com/ocsmit/zed-r)
+- [ocsmit/zed-r](https://tvv.tw/https://github.com/ocsmit/zed-r)
 
-  - Tree-sitter: [r-lib/tree-sitter-r](https://github.com/r-lib/tree-sitter-r)
-  - Language-Server: [REditorSupport/languageserver](https://github.com/REditorSupport/languageserver)
+  - Tree-sitter: [r-lib/tree-sitter-r](https://tvv.tw/https://github.com/r-lib/tree-sitter-r)
+  - Language-Server: [REditorSupport/languageserver](https://tvv.tw/https://github.com/REditorSupport/languageserver)
 
-- [posit-dev/air](https://github.com/posit-dev/air/tree/main/editors/zed)
-  - Language-Server: [posit-dev/air](https://github.com/posit-dev/air)
+- [posit-dev/air](https://tvv.tw/https://github.com/posit-dev/air/tree/main/editors/zed)
+  - Language-Server: [posit-dev/air](https://tvv.tw/https://github.com/posit-dev/air)
 
 ## Installation
 
@@ -20,7 +20,7 @@ install.packages("languageserver")
 install.packages("lintr")
 ```
 
-3. Install the [ocsmit/zed-r](https://github.com/ocsmit/zed-r) through Zed's extensions manager.
+3. Install the [ocsmit/zed-r](https://tvv.tw/https://github.com/ocsmit/zed-r) through Zed's extensions manager.
 
 For example on macOS:
 
@@ -37,7 +37,7 @@ Rscript -e 'packageVersion("lintr")'
 
 ### Linting
 
-`REditorSupport/languageserver` bundles support for [r-lib/lintr](https://github.com/r-lib/lintr) as a linter. This can be configured via the use of a `.lintr` inside your project (or in your home directory for global defaults).
+`REditorSupport/languageserver` bundles support for [r-lib/lintr](https://tvv.tw/https://github.com/r-lib/lintr) as a linter. This can be configured via the use of a `.lintr` inside your project (or in your home directory for global defaults).
 
 ```r
 linters: linters_with_defaults(
@@ -61,14 +61,14 @@ See [Using lintr](https://lintr.r-lib.org/articles/lintr.html) for a complete li
 
 ### Formatting
 
-`REditorSupport/languageserver` bundles support for [r-lib/styler](https://github.com/r-lib/styler) as a formatter. See [Customizing Styler](https://cran.r-project.org/web/packages/styler/vignettes/customizing_styler.html) for more information on how to customize its behavior.
+`REditorSupport/languageserver` bundles support for [r-lib/styler](https://tvv.tw/https://github.com/r-lib/styler) as a formatter. See [Customizing Styler](https://cran.r-project.org/web/packages/styler/vignettes/customizing_styler.html) for more information on how to customize its behavior.
 
 <!--
 TBD: Get this working
 
 ### REditorSupport/languageserver Configuration
 
-You can configure the [R languageserver settings](https://github.com/REditorSupport/languageserver#settings) via Zed Project Settings `.zed/settings.json` or Zed User Settings `~/.config/zed/settings.json`:
+You can configure the [R languageserver settings](https://tvv.tw/https://github.com/REditorSupport/languageserver#settings) via Zed Project Settings `.zed/settings.json` or Zed User Settings `~/.config/zed/settings.json`:
 
 For example to disable Lintr linting and suppress code snippet suggestions (both enabled by default):
 
@@ -98,8 +98,8 @@ TBD: R REPL Docs
 
 ### Ark Installation
 
-To use the Zed REPL with R you need to install [Ark](https://github.com/posit-dev/ark), an R Kernel for Jupyter applications.
-You can down the latest version from the [Ark GitHub Releases](https://github.com/posit-dev/ark/releases) and then extract the `ark` binary to a directory in your `PATH`.
+To use the Zed REPL with R you need to install [Ark](https://tvv.tw/https://github.com/posit-dev/ark), an R Kernel for Jupyter applications.
+You can down the latest version from the [Ark GitHub Releases](https://tvv.tw/https://github.com/posit-dev/ark/releases) and then extract the `ark` binary to a directory in your `PATH`.
 
 For example to install the latest non-debug build:
 

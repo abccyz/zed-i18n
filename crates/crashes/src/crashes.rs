@@ -184,7 +184,7 @@ impl minidumper::ServerHandler for CrashServer {
             Ok(MinidumpBinary { mut file, path, .. }) => {
                 use io::Write;
                 file.flush().ok();
-                // TODO: clean this up once https://github.com/EmbarkStudios/crash-handling/issues/101 is addressed
+                // TODO: clean this up once https://tvv.tw/https://github.com/EmbarkStudios/crash-handling/issues/101 is addressed
                 drop(file);
                 let original_file = File::open(&path).unwrap();
                 let compressed_path = path.with_extension("zstd");

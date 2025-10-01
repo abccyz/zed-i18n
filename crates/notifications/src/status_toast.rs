@@ -207,7 +207,7 @@ impl Component for StatusToast {
             StatusToast::new("`zed/new-notification-system` created!", cx, |this, _cx| {
                 this.icon(ToastIcon::new(IconName::GitBranchAlt).color(Color::Muted))
                     .action("Open Pull Request", |_, cx| {
-                        cx.open_url("https://github.com/")
+                        cx.open_url("https://tvv.tw/https://github.com/")
                     })
             });
 

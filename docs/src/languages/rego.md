@@ -1,9 +1,9 @@
 # Rego
 
-Rego language support in Zed is provided by the community-maintained [Rego extension](https://github.com/StyraInc/zed-rego).
+Rego language support in Zed is provided by the community-maintained [Rego extension](https://tvv.tw/https://github.com/StyraInc/zed-rego).
 
-- Tree-sitter: [FallenAngel97/tree-sitter-rego](https://github.com/FallenAngel97/tree-sitter-rego)
-- Language Server: [StyraInc/regal](https://github.com/StyraInc/regal)
+- Tree-sitter: [FallenAngel97/tree-sitter-rego](https://tvv.tw/https://github.com/FallenAngel97/tree-sitter-rego)
+- Language Server: [StyraInc/regal](https://tvv.tw/https://github.com/StyraInc/regal)
 
 ## Installation
 

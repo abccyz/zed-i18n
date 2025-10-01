@@ -1,10 +1,10 @@
 # Kotlin
 
-Kotlin language support in Zed is provided by the community-maintained [Kotlin extension](https://github.com/zed-extensions/kotlin).
-Report issues to: [https://github.com/zed-extensions/kotlin/issues](https://github.com/zed-extensions/kotlin/issues)
+Kotlin language support in Zed is provided by the community-maintained [Kotlin extension](https://tvv.tw/https://github.com/zed-extensions/kotlin).
+Report issues to: [https://tvv.tw/https://github.com/zed-extensions/kotlin/issues](https://tvv.tw/https://github.com/zed-extensions/kotlin/issues)
 
-- Tree-sitter: [fwcd/tree-sitter-kotlin](https://github.com/fwcd/tree-sitter-kotlin)
-- Language Server: [fwcd/kotlin-language-server](https://github.com/fwcd/kotlin-language-server)
+- Tree-sitter: [fwcd/tree-sitter-kotlin](https://tvv.tw/https://github.com/fwcd/tree-sitter-kotlin)
+- Language Server: [fwcd/kotlin-language-server](https://tvv.tw/https://github.com/fwcd/kotlin-language-server)
 
 ## Configuration
 
@@ -12,7 +12,7 @@ Workspace configuration options can be passed to the language server via lsp
 settings in `settings.json`.
 
 The full list of lsp `settings` can be found
-[here](https://github.com/fwcd/kotlin-language-server/blob/main/server/src/main/kotlin/org/javacs/kt/Configuration.kt)
+[here](https://tvv.tw/https://github.com/fwcd/kotlin-language-server/blob/main/server/src/main/kotlin/org/javacs/kt/Configuration.kt)
 under `class Configuration` and initialization_options under `class InitializationOptions`.
 
 ### JVM Target

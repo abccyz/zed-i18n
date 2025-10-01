@@ -1,6 +1,7 @@
 use std::sync::Arc;
 
 use gpui::{App, FontFeatures, FontWeight};
+use localization::{self, shared};
 use project::project_settings::ProjectSettings;
 use settings::{EditableSettingControl, Settings, SettingsContent};
 use theme::{FontFamilyCache, FontFamilyName, ThemeSettings};
@@ -30,7 +31,7 @@ impl RenderOnce for EditorSettingsControls {
     fn render(self, _window: &mut Window, _cx: &mut App) -> impl IntoElement {
         SettingsContainer::new()
             .child(
-                SettingsGroup::new("Font")
+                SettingsGroup::new(shared("settings.group.font", "Font"))
                     .child(
                         h_flex()
                             .gap_2()
@@ -41,9 +42,12 @@ impl RenderOnce for EditorSettingsControls {
                     .child(BufferFontSizeControl)
                     .child(BufferFontLigaturesControl),
             )
-            .child(SettingsGroup::new("Editor").child(InlineGitBlameControl))
             .child(
-                SettingsGroup::new("Gutter").child(
+                SettingsGroup::new(shared("settings.group.editor", "Editor"))
+                    .child(InlineGitBlameControl),
+            )
+            .child(
+                SettingsGroup::new(shared("settings.group.gutter", "Gutter")).child(
                     h_flex()
                         .gap_2()
                         .justify_between()
@@ -61,7 +65,7 @@ impl EditableSettingControl for BufferFontFamilyControl {
     type Value = SharedString;
 
     fn name(&self) -> SharedString {
-        "Buffer Font Family".into()
+        shared("setting.buffer_font_family", "Buffer Font Family")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -115,7 +119,7 @@ impl EditableSettingControl for BufferFontSizeControl {
     type Value = Pixels;
 
     fn name(&self) -> SharedString {
-        "Buffer Font Size".into()
+        shared("setting.buffer_font_size", "Buffer Font Size")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -154,7 +158,7 @@ impl EditableSettingControl for BufferFontWeightControl {
     type Value = FontWeight;
 
     fn name(&self) -> SharedString {
-        "Buffer Font Weight".into()
+        shared("setting.buffer_font_weight", "Buffer Font Weight")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -202,7 +206,7 @@ impl EditableSettingControl for BufferFontLigaturesControl {
     type Value = bool;
 
     fn name(&self) -> SharedString {
-        "Buffer Font Ligatures".into()
+        shared("setting.buffer_font_ligatures", "Buffer Font Ligatures")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -262,7 +266,7 @@ impl EditableSettingControl for InlineGitBlameControl {
     type Value = bool;
 
     fn name(&self) -> SharedString {
-        "Inline Git Blame".into()
+        shared("setting.inline_git_blame", "Inline Git Blame")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -308,7 +312,7 @@ impl EditableSettingControl for LineNumbersControl {
     type Value = bool;
 
     fn name(&self) -> SharedString {
-        "Line Numbers".into()
+        shared("setting.line_numbers", "Line Numbers")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -349,7 +353,7 @@ impl EditableSettingControl for RelativeLineNumbersControl {
     type Value = bool;
 
     fn name(&self) -> SharedString {
-        "Relative Line Numbers".into()
+        shared("setting.relative_line_numbers", "Relative Line Numbers")
     }
 
     fn read(cx: &App) -> Self::Value {
@@ -366,16 +370,31 @@ impl RenderOnce for RelativeLineNumbersControl {
     fn render(self, window: &mut Window, cx: &mut App) -> impl IntoElement {
         let value = Self::read(cx);
 
+        let current_label = if value {
+            shared("option.relative_line_numbers.relative", "Relative")
+        } else {
+            shared("option.relative_line_numbers.ascending", "Ascending")
+        };
+
         DropdownMenu::new(
             "relative-line-numbers",
-            if value { "Relative" } else { "Ascending" },
+            current_label,
             ContextMenu::build(window, cx, |menu, _window, _cx| {
                 menu.custom_entry(
-                    |_window, _cx| Label::new("Ascending").into_any_element(),
+                    |_window, _cx| {
+                        Label::new(shared(
+                            "option.relative_line_numbers.ascending",
+                            "Ascending",
+                        ))
+                        .into_any_element()
+                    },
                     move |_, cx| Self::write(false, cx),
                 )
                 .custom_entry(
-                    |_window, _cx| Label::new("Relative").into_any_element(),
+                    |_window, _cx| {
+                        Label::new(shared("option.relative_line_numbers.relative", "Relative"))
+                            .into_any_element()
+                    },
                     move |_, cx| Self::write(true, cx),
                 )
             }),

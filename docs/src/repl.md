@@ -70,7 +70,7 @@ style.use('ggplot')
 
 <div class="warning">
 
-On macOS, your system Python will _not_ work. Either set up [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation) or use a virtual environment.
+On macOS, your system Python will _not_ work. Either set up [pyenv](https://tvv.tw/https://github.com/pyenv/pyenv?tab=readme-ov-file#installation) or use a virtual environment.
 
 </div>
 
@@ -99,7 +99,7 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 
 ### R (Ark Kernel) {#r-ark}
 
-Install [Ark](https://github.com/posit-dev/ark/releases) by downloading the release for your operating system. For example, for macOS just unpack `ark` binary and put it into `/usr/local/bin`. Then run:
+Install [Ark](https://tvv.tw/https://github.com/posit-dev/ark/releases) by downloading the release for your operating system. For example, for macOS just unpack `ark` binary and put it into `/usr/local/bin`. Then run:
 
 ```sh
 ark --install
@@ -107,7 +107,7 @@ ark --install
 
 ### R (Xeus Kernel) {#r-xeus}
 
-- Install [Xeus-R](https://github.com/jupyter-xeus/xeus-r)
+- Install [Xeus-R](https://tvv.tw/https://github.com/jupyter-xeus/xeus-r)
 - Install the R Extension for Zed (search for `R` in Zed Extensions)
 
 <!--

@@ -33,7 +33,7 @@ use crate::assertions::{AssertionsReport, RanAssertion, RanAssertionResult};
 use crate::example::{Example, ExampleContext, FailedAssertion, JudgeAssertion};
 use crate::{AgentAppState, ToolMetrics};
 
-pub const ZED_REPO_URL: &str = "https://github.com/zed-industries/zed.git";
+pub const ZED_REPO_URL: &str = "https://tvv.tw/https://github.com/zed-industries/zed.git";
 
 #[derive(Clone)]
 pub struct ExampleInstance {

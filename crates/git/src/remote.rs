@@ -35,7 +35,7 @@ mod tests {
     fn test_parsing_valid_remote_urls() {
         let valid_urls = vec![
             (
-                "https://github.com/octocat/zed.git",
+                "https://tvv.tw/https://github.com/octocat/zed.git",
                 "https",
                 "github.com",
                 "/octocat/zed.git",

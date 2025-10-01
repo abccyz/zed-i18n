@@ -2,7 +2,7 @@ use gpui::Hsla;
 
 /// APCA (Accessible Perceptual Contrast Algorithm) constants
 /// Based on APCA 0.0.98G-4g W3 compatible constants
-/// https://github.com/Myndex/apca-w3
+/// https://tvv.tw/https://github.com/Myndex/apca-w3
 struct APCAConstants {
     // Main TRC exponent for monitor perception
     main_trc: f32,
@@ -72,7 +72,7 @@ impl Default for APCAConstants {
 ///
 /// Most terminal themes use colors with APCA values of 40-70.
 ///
-/// https://github.com/Myndex/apca-w3
+/// https://tvv.tw/https://github.com/Myndex/apca-w3
 pub fn apca_contrast(text_color: Hsla, background_color: Hsla) -> f32 {
     let constants = APCAConstants::default();
 

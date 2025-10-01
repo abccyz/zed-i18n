@@ -48,6 +48,9 @@ pub struct SettingsContent {
     #[serde(flatten)]
     pub editor: EditorSettingsContent,
 
+    /// Preferred language for Zed's user interface.
+    pub ui_language: Option<UiLanguagePreference>,
+
     #[serde(flatten)]
     pub remote: RemoteSettingsContent,
 
@@ -164,6 +167,22 @@ impl SettingsContent {
     pub fn languages_mut(&mut self) -> &mut HashMap<SharedString, LanguageSettingsContent> {
         &mut self.project.all_languages.languages.0
     }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, JsonSchema, MergeFrom)]
+#[serde(rename_all = "kebab-case")]
+pub enum UiLanguagePreference {
+    #[serde(alias = "auto")]
+    Auto,
+    #[serde(alias = "en")]
+    #[serde(alias = "en-us")]
+    #[serde(alias = "en-US")]
+    English,
+    #[serde(alias = "zh")]
+    #[serde(alias = "zh-hans")]
+    #[serde(alias = "zh-cn")]
+    #[serde(alias = "zh-CN")]
+    SimplifiedChinese,
 }
 
 #[skip_serializing_none]
@@ -863,5 +882,22 @@ impl From<bool> for SaturatingBool {
 impl merge_from::MergeFrom for SaturatingBool {
     fn merge_from(&mut self, other: &Self) {
         self.0 |= other.0
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn ui_language_accepts_uppercase_aliases() {
+        assert_eq!(
+            serde_json::from_str::<UiLanguagePreference>("\"zh-CN\"").unwrap(),
+            UiLanguagePreference::SimplifiedChinese
+        );
+        assert_eq!(
+            serde_json::from_str::<UiLanguagePreference>("\"en-US\"").unwrap(),
+            UiLanguagePreference::English
+        );
     }
 }

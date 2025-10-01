@@ -108,9 +108,9 @@ let
               cargoHash = "sha256-urn+A3yuw2uAO4HGmvQnKvWtHqvG9KHxNCCWTiytE4k=";
 
               # NOTE: can drop once upstream uses `finalAttrs` here:
-              # https://github.com/NixOS/nixpkgs/blob/10214747f5e6e7cb5b9bdf9e018a3c7b3032f5af/pkgs/build-support/rust/build-rust-package/default.nix#L104
+              # https://tvv.tw/https://github.com/NixOS/nixpkgs/blob/10214747f5e6e7cb5b9bdf9e018a3c7b3032f5af/pkgs/build-support/rust/build-rust-package/default.nix#L104
               #
-              # See (for context): https://github.com/NixOS/nixpkgs/pull/382550
+              # See (for context): https://tvv.tw/https://github.com/NixOS/nixpkgs/pull/382550
               cargoDeps = rustPlatform.fetchCargoVendor {
                 inherit (new) src;
                 hash = new.cargoHash;
@@ -179,7 +179,7 @@ let
         LK_CUSTOM_WEBRTC = livekit-libwebrtc;
 
         CARGO_PROFILE = profile;
-        # need to handle some profiles specially https://github.com/rust-lang/cargo/issues/11053
+        # need to handle some profiles specially https://tvv.tw/https://github.com/rust-lang/cargo/issues/11053
         TARGET_DIR = "target/" + (if profile == "dev" then "debug" else profile);
 
         # for some reason these deps being in buildInputs isn't enough, the only thing
@@ -207,7 +207,7 @@ let
           let
             hasWebRtcSys = builtins.any (crate: crate.name == "webrtc-sys");
             # we can't set $RUSTFLAGS because that clobbers the cargo config
-            # see https://github.com/rust-lang/cargo/issues/5376#issuecomment-2163350032
+            # see https://tvv.tw/https://github.com/rust-lang/cargo/issues/5376#issuecomment-2163350032
             glesConfig = builtins.toFile "config.toml" ''
               [target.'cfg(all())']
               rustflags = ["--cfg", "gles"]
@@ -243,7 +243,7 @@ craneLib.buildPackage (
     dontUseCmakeConfigure = true;
 
     # without the env var generate-licenses fails due to crane's fetchCargoVendor, see:
-    # https://github.com/zed-industries/zed/issues/19971#issuecomment-2688455390
+    # https://tvv.tw/https://github.com/zed-industries/zed/issues/19971#issuecomment-2688455390
     # TODO: put this in a separate derivation that depends on src to avoid running it on every build
     preBuild = ''
       ALLOW_MISSING_LICENSES=yes bash script/generate-licenses

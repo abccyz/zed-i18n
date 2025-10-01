@@ -91,6 +91,7 @@ language_selector.workspace = true
 language_tools.workspace = true
 languages = { workspace = true, features = ["load-grammars"] }
 line_ending_selector.workspace = true
+localization.workspace = true
 log.workspace = true
 markdown.workspace = true
 markdown_preview.workspace = true
@@ -107,6 +108,7 @@ outline.workspace = true
 outline_panel.workspace = true
 parking_lot.workspace = true
 paths.workspace = true
+performance_monitor.workspace = true
 picker.workspace = true
 settings_profile_selector.workspace = true
 profiling.workspace = true

@@ -7,8 +7,8 @@ use serde::{Deserialize, Serialize};
 // to be called from main.
 //
 // These may provide relevant context:
-// https://github.com/rust-lang/rust/issues/47384
-// https://github.com/mmastrac/rust-ctor/issues/280
+// https://tvv.tw/https://github.com/rust-lang/rust/issues/47384
+// https://tvv.tw/https://github.com/mmastrac/rust-ctor/issues/280
 pub fn init() {}
 
 /// Opens a URL in the system's default web browser.
@@ -25,6 +25,15 @@ pub struct OpenBrowser {
 #[serde(deny_unknown_fields)]
 pub struct OpenZedUrl {
     pub url: String,
+}
+
+/// Sets the preferred language for Zed's user interface.
+#[derive(PartialEq, Clone, Debug, Deserialize, JsonSchema, Action)]
+#[action(namespace = zed)]
+#[serde(deny_unknown_fields)]
+pub struct SetUiLanguage {
+    /// Language identifier such as `auto`, `zh-CN`, `en-US`.
+    pub language: String,
 }
 
 actions!(

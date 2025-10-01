@@ -290,8 +290,8 @@ impl SshRemoteConnection {
                 "-o",
             ];
             // On Windows, `ControlMaster` and `ControlPath` are not supported:
-            // https://github.com/PowerShell/Win32-OpenSSH/issues/405
-            // https://github.com/PowerShell/Win32-OpenSSH/wiki/Project-Scope
+            // https://tvv.tw/https://github.com/PowerShell/Win32-OpenSSH/issues/405
+            // https://tvv.tw/https://github.com/PowerShell/Win32-OpenSSH/wiki/Project-Scope
             #[cfg(target_os = "windows")]
             let args = ["-N"];
             let mut master_process = util::command::new_smol_command("ssh");

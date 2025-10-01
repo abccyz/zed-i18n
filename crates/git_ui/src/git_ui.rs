@@ -826,7 +826,9 @@ impl Render for GitCloneModal {
                             .icon(IconName::ArrowUpRight)
                             .icon_size(IconSize::XSmall)
                             .on_click(|_, _, cx| {
-                                cx.open_url("https://github.com/git-guides/git-clone");
+                                cx.open_url(
+                                    "https://tvv.tw/https://github.com/git-guides/git-clone",
+                                );
                             }),
                     ),
             )

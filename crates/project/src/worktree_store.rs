@@ -262,7 +262,7 @@ impl WorktreeStore {
         // If we start with `/~` that means the ssh path was something like `ssh://user@host/~/home-dir-folder/`
         // in which case want to strip the leading the `/`.
         // On the host-side, the `~` will get expanded.
-        // That's what git does too: https://github.com/libgit2/libgit2/issues/3345#issuecomment-127050850
+        // That's what git does too: https://tvv.tw/https://github.com/libgit2/libgit2/issues/3345#issuecomment-127050850
         if abs_path.starts_with("/~") {
             abs_path = abs_path[1..].to_string();
         }

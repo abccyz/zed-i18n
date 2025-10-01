@@ -1,6 +1,17 @@
 [build]
+# 控制并行 job 数以降低峰值内存 (可按机器内存调节 2~8)
+jobs = 4
 # v0 mangling scheme provides more detailed backtraces around closures
-rustflags = ["-C", "symbol-mangling-version=v0", "--cfg", "tokio_unstable"]
+rustflags = [
+    "-C","symbol-mangling-version=v0",
+    "--cfg","tokio_unstable",
+    # 降低每crate并行代码生成单元 (默认16) 以减少内存
+    "-C","codegen-units=4",
+    # 略降优化等级减少编译内存 (后续可升回 2/3)
+    "-C","opt-level=1",
+    # 降低调试信息体积 (0/1 可选)
+    "-C","debuginfo=1"
+]
 
 [alias]
 xtask = "run --package xtask --"
@@ -22,6 +33,22 @@ rustflags = [
     "-C",
     "target-feature=+crt-static", # This fixes the linking issue when compiling livekit on Windows
 ]
+
+[profile.dev]
+opt-level = 1
+codegen-units = 4
+incremental = true
+
+[profile.release]
+opt-level = 2
+codegen-units = 8
+lto = false
+incremental = false
+
+# 可按需对超大 crate 单独降优化示例：
+# [profile.dev.package."wasmtime"]
+# opt-level = 0
+# codegen-units = 2
 
 [env]
 MACOSX_DEPLOYMENT_TARGET = "10.15.7"

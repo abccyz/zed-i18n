@@ -360,7 +360,7 @@ impl Prettier {
                         };
 
                         // Tailwind plugin requires being added last
-                        // https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins
+                        // https://tvv.tw/https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins
                         let mut add_tailwind_back = false;
 
                         let mut located_plugins = prettier_settings.plugins.iter()

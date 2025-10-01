@@ -8,7 +8,7 @@
 # * use curl instead of wget
 # * support doas for sudo
 # * support redhat systems
-# See: https://github.com/rui314/setup-mold/blob/main/action.yml
+# See: https://tvv.tw/https://github.com/rui314/setup-mold/blob/main/action.yml
 
 set -euo pipefail
 
@@ -26,7 +26,7 @@ fi
 
 if [ "$(whoami)" = root ]; then SUDO=; else SUDO="$(command -v sudo || command -v doas || true)"; fi
 
-MOLD_REPO="${MOLD_REPO:-https://github.com/rui314/mold}"
+MOLD_REPO="${MOLD_REPO:-https://tvv.tw/https://github.com/rui314/mold}"
 MOLD_URL="${MOLD_URL:-$MOLD_REPO}/releases/download/v$MOLD_VERSION/mold-$MOLD_VERSION-$(uname -m)-linux.tar.gz"
 
 echo "Downloading from $MOLD_URL"

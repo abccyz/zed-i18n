@@ -468,7 +468,7 @@ pub fn cursor_settings_file_paths() -> Vec<PathBuf> {
 }
 
 fn vscode_user_data_paths() -> Vec<PathBuf> {
-    // https://github.com/microsoft/vscode/blob/23e7148cdb6d8a27f0109ff77e5b1e019f8da051/src/vs/platform/environment/node/userDataPath.ts#L45
+    // https://tvv.tw/https://github.com/microsoft/vscode/blob/23e7148cdb6d8a27f0109ff77e5b1e019f8da051/src/vs/platform/environment/node/userDataPath.ts#L45
     const VSCODE_PRODUCT_NAMES: &[&str] = &[
         "Code",
         "Code - OSS",

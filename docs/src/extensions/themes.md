@@ -50,4 +50,4 @@ The core components a Theme object include:
 6. Terminal Colors:
    - ANSI color definitions for the integrated terminal
 
-We recommend looking at our [existing themes](https://github.com/zed-industries/zed/tree/main/assets/themes) to get a more comprehensive idea of what can be styled.
+We recommend looking at our [existing themes](https://tvv.tw/https://github.com/zed-industries/zed/tree/main/assets/themes) to get a more comprehensive idea of what can be styled.

@@ -26,16 +26,17 @@ use futures::{StreamExt, channel::mpsc, select_biased};
 use git_ui::git_panel::GitPanel;
 use git_ui::project_diff::ProjectDiffToolbar;
 use gpui::{
-    Action, App, AppContext as _, Context, DismissEvent, Element, Entity, Focusable, KeyBinding,
-    ParentElement, PathPromptOptions, PromptLevel, ReadGlobal, SharedString, Styled, Task,
-    TitlebarOptions, UpdateGlobal, Window, WindowKind, WindowOptions, actions, image_cache, point,
-    px, retain_all,
+    Action, App, AppContext as _, AsyncApp, Context, DismissEvent, Element, Entity, Focusable,
+    KeyBinding, ParentElement, PathPromptOptions, PromptLevel, ReadGlobal, SharedString, Styled,
+    Task, TitlebarOptions, UpdateGlobal, Window, WindowKind, WindowOptions, actions, image_cache,
+    point, px, retain_all,
 };
 use image_viewer::ImageInfo;
 use language::Capability;
 use language_onboarding::BasedPyrightBanner;
 use language_tools::lsp_button::{self, LspButton};
 use language_tools::lsp_log_view::LspLogToolbarItemView;
+use localization::{self, Language};
 use migrate::{MigrationBanner, MigrationEvent, MigrationNotification, MigrationType};
 use migrator::{migrate_keymap, migrate_settings};
 use onboarding::DOCS_URL;
@@ -46,6 +47,7 @@ use paths::{
     local_debug_file_relative_path, local_settings_file_relative_path,
     local_tasks_file_relative_path,
 };
+use performance_monitor::PerformanceMonitor;
 use project::{DirectoryLister, ProjectItem};
 use project_panel::ProjectPanel;
 use prompt_store::PromptBuilder;
@@ -56,14 +58,17 @@ use rope::Rope;
 use search::project_search::ProjectSearchBar;
 use settings::{
     BaseKeymap, DEFAULT_KEYMAP_PATH, InvalidSettingsError, KeybindSource, KeymapFile,
-    KeymapFileLoadResult, Settings, SettingsStore, VIM_KEYMAP_PATH,
+    KeymapFileLoadResult, Settings, SettingsStore, UiLanguagePreference, VIM_KEYMAP_PATH,
     initial_local_debug_tasks_content, initial_project_settings_content, initial_tasks_content,
     update_settings_file,
 };
 use std::time::Duration;
 use std::{
     borrow::Cow,
+    env,
+    ffi::OsString,
     path::{Path, PathBuf},
+    process::Command,
     sync::Arc,
     sync::atomic::{self, AtomicBool},
 };
@@ -88,6 +93,7 @@ use workspace::{
 use workspace::{Pane, notifications::DetachAndPromptErr};
 use zed_actions::{
     OpenAccountSettings, OpenBrowser, OpenDocs, OpenServerSettings, OpenSettings, OpenZedUrl, Quit,
+    SetUiLanguage,
 };
 
 actions!(
@@ -412,6 +418,7 @@ pub fn initialize_workspace(
 
         let cursor_position =
             cx.new(|_| go_to_line::cursor_position::CursorPosition::new(workspace));
+        let performance_monitor = cx.new(|cx| PerformanceMonitor::new(cx));
         workspace.status_bar().update(cx, |status_bar, cx| {
             status_bar.add_left_item(search_button, window, cx);
             status_bar.add_left_item(lsp_button, window, cx);
@@ -422,6 +429,7 @@ pub fn initialize_workspace(
             status_bar.add_right_item(active_toolchain_language, window, cx);
             status_bar.add_right_item(vim_mode_indicator, window, cx);
             status_bar.add_right_item(cursor_position, window, cx);
+            status_bar.add_right_item(performance_monitor, window, cx);
             status_bar.add_right_item(image_info, window, cx);
         });
 
@@ -778,6 +786,100 @@ fn register_actions(
                 } else {
                     theme::reset_ui_font_size(cx);
                 }
+            }
+        })
+        .register_action({
+            let fs = app_state.fs.clone();
+            move |_, action: &SetUiLanguage, window, cx| {
+                let normalized = action.language.trim().to_ascii_lowercase();
+                let preference = match normalized.as_str() {
+                    "auto" | "system" | "follow-system" => UiLanguagePreference::Auto,
+                    "en" | "en-us" | "english" => UiLanguagePreference::English,
+                    "zh" | "zh-cn" | "zh-hans" | "simplified-chinese" => {
+                        UiLanguagePreference::SimplifiedChinese
+                    }
+                    other => {
+                        log::warn!("unrecognized ui language '{}'", other);
+                        return;
+                    }
+                };
+
+                let language = match preference {
+                    UiLanguagePreference::English => Language::English,
+                    UiLanguagePreference::SimplifiedChinese | UiLanguagePreference::Auto => {
+                        Language::SimplifiedChinese
+                    }
+                };
+
+                let previous_language = localization::current_language();
+                let language_changed = previous_language != language;
+
+                localization::set_language(language);
+                cx.refresh_windows();
+
+                let preference_for_file = preference;
+                update_settings_file(fs.clone(), cx, move |settings, _| {
+                    settings.ui_language = Some(preference_for_file);
+                });
+
+                let value = match preference_for_file {
+                    UiLanguagePreference::Auto => "auto",
+                    UiLanguagePreference::English => "en-US",
+                    UiLanguagePreference::SimplifiedChinese => "zh-CN",
+                };
+                telemetry::event!("Settings Changed", setting = "ui_language", value = value);
+
+                if !language_changed {
+                    return;
+                }
+
+                let title = localization::translate_owned(
+                    "prompt.restart_required.title",
+                    "Restart Required",
+                );
+                let message = localization::translate_owned(
+                    "prompt.restart_required.message",
+                    "Please restart Zed to fully apply the language change.",
+                );
+                let restart_now = localization::translate_owned(
+                    "prompt.restart_required.restart_now",
+                    "Restart Now",
+                );
+                let later = localization::translate_owned("prompt.restart_required.later", "Later");
+
+                let prompt = window.prompt(
+                    PromptLevel::Info,
+                    title.as_str(),
+                    Some(message.as_str()),
+                    &[restart_now.as_str(), later.as_str()],
+                    cx,
+                );
+
+                let restart_args: Vec<OsString> = env::args_os().skip(1).collect();
+                let restart_exe = match env::current_exe() {
+                    Ok(path) => path,
+                    Err(err) => {
+                        log::error!("failed to determine current executable for restart: {err:?}");
+                        return;
+                    }
+                };
+
+                cx.spawn(move |_, cx: &mut AsyncApp| {
+                    let async_cx = cx.clone();
+                    async move {
+                        if prompt.await == Ok(0) {
+                            match Command::new(&restart_exe).args(&restart_args).spawn() {
+                                Ok(_) => {
+                                    async_cx.update(|cx| cx.quit()).ok();
+                                }
+                                Err(err) => {
+                                    log::error!("failed to restart Zed: {err:?}");
+                                }
+                            }
+                        }
+                    }
+                })
+                .detach();
             }
         })
         .register_action({

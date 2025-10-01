@@ -68,7 +68,11 @@ mod tests {
             path: vec!["**".to_string()],
         };
         assert_eq!(
-            capability.allows(&"https://github.com/some-owner/some-repo".parse().unwrap()),
+            capability.allows(
+                &"https://tvv.tw/https://github.com/some-owner/some-repo"
+                    .parse()
+                    .unwrap()
+            ),
             true
         );
         assert_eq!(
@@ -85,12 +89,16 @@ mod tests {
             path: vec!["specific-owner".to_string(), "*".to_string()],
         };
         assert_eq!(
-            capability.allows(&"https://github.com/some-owner/some-repo".parse().unwrap()),
+            capability.allows(
+                &"https://tvv.tw/https://github.com/some-owner/some-repo"
+                    .parse()
+                    .unwrap()
+            ),
             false
         );
         assert_eq!(
             capability.allows(
-                &"https://github.com/specific-owner/some-repo"
+                &"https://tvv.tw/https://github.com/specific-owner/some-repo"
                     .parse()
                     .unwrap()
             ),
@@ -103,7 +111,7 @@ mod tests {
         };
         assert_eq!(
             capability.allows(
-                &"https://github.com/some-owner/some-repo/extra"
+                &"https://tvv.tw/https://github.com/some-owner/some-repo/extra"
                     .parse()
                     .unwrap()
             ),
@@ -111,7 +119,7 @@ mod tests {
         );
         assert_eq!(
             capability.allows(
-                &"https://github.com/specific-owner/some-repo/extra"
+                &"https://tvv.tw/https://github.com/specific-owner/some-repo/extra"
                     .parse()
                     .unwrap()
             ),

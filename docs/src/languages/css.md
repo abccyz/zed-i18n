@@ -2,10 +2,10 @@
 
 Zed has built-in support for CSS.
 
-- Tree-sitter: [tree-sitter/tree-sitter-css](https://github.com/tree-sitter/tree-sitter-css)
+- Tree-sitter: [tree-sitter/tree-sitter-css](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-css)
 - Language Servers:
-  - [microsoft/vscode-html-languageservice](https://github.com/microsoft/vscode-html-languageservice)
-  - [tailwindcss-language-server](https://github.com/tailwindlabs/tailwindcss-intellisense)
+  - [microsoft/vscode-html-languageservice](https://tvv.tw/https://github.com/microsoft/vscode-html-languageservice)
+  - [tailwindcss-language-server](https://tvv.tw/https://github.com/tailwindlabs/tailwindcss-intellisense)
 
 ## Tailwind CSS
 

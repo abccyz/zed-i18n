@@ -22,7 +22,7 @@ In particular we love PRs that are:
 
 If you're looking for concrete ideas:
 
-- Our [top-ranking issues](https://github.com/zed-industries/zed/issues/5393) based on votes by the community.
+- Our [top-ranking issues](https://tvv.tw/https://github.com/zed-industries/zed/issues/5393) based on votes by the community.
 - Our [public roadmap](https://zed.dev/roadmap) contains a rough outline of our near-term priorities for Zed.
 
 ## Sending changes

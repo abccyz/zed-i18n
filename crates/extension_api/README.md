@@ -13,7 +13,7 @@ description = "..."
 version = "0.0.1"
 schema_version = 1
 authors = ["Your Name <you@example.com>"]
-repository = "https://github.com/your/extension-repository"
+repository = "https://tvv.tw/https://github.com/your/extension-repository"
 ```
 
 ## Cargo metadata

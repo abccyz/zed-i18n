@@ -33,7 +33,7 @@ use crate::{
 pub(crate) const SCROLL_LINES: f32 = 3.0;
 
 // Values match the defaults on GTK.
-// Taken from https://github.com/GNOME/gtk/blob/main/gtk/gtksettings.c#L320
+// Taken from https://tvv.tw/https://github.com/GNOME/gtk/blob/main/gtk/gtksettings.c#L320
 #[cfg(any(feature = "wayland", feature = "x11"))]
 pub(crate) const DOUBLE_CLICK_INTERVAL: Duration = Duration::from_millis(400);
 pub(crate) const DOUBLE_CLICK_DISTANCE: Pixels = px(5.0);
@@ -673,7 +673,7 @@ impl CursorStyle {
     #[cfg(any(feature = "wayland", feature = "x11"))]
     pub(super) fn to_icon_names(self) -> &'static [&'static str] {
         // Based on cursor names from chromium:
-        // https://github.com/chromium/chromium/blob/d3069cf9c973dc3627fa75f64085c6a86c8f41bf/ui/base/cursor/cursor_factory.cc#L113
+        // https://tvv.tw/https://github.com/chromium/chromium/blob/d3069cf9c973dc3627fa75f64085c6a86c8f41bf/ui/base/cursor/cursor_factory.cc#L113
         match self {
             CursorStyle::Arrow => &[DEFAULT_CURSOR_ICON_NAME],
             CursorStyle::IBeam => &["text", "xterm"],

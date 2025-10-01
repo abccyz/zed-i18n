@@ -51,6 +51,7 @@ indoc.workspace = true
 edit_prediction.workspace = true
 itertools.workspace = true
 language.workspace = true
+localization.workspace = true
 linkify.workspace = true
 log.workspace = true
 lsp.workspace = true

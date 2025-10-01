@@ -2,9 +2,9 @@
 
 C support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-c](https://github.com/tree-sitter/tree-sitter-c)
-- Language Server: [clangd/clangd](https://github.com/clangd/clangd)
-- Debug Adapter: [CodeLLDB](https://github.com/vadimcn) (primary), [GDB](https://sourceware.org/gdb/) (secondary, not available on Apple silicon)
+- Tree-sitter: [tree-sitter/tree-sitter-c](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-c)
+- Language Server: [clangd/clangd](https://tvv.tw/https://github.com/clangd/clangd)
+- Debug Adapter: [CodeLLDB](https://tvv.tw/https://github.com/vadimcn) (primary), [GDB](https://sourceware.org/gdb/) (secondary, not available on Apple silicon)
 
 ## Clangd: Force detect as C
 

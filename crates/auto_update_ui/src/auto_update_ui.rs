@@ -47,8 +47,12 @@ fn view_release_notes_locally(
     let release_channel = ReleaseChannel::global(cx);
 
     let url = match release_channel {
-        ReleaseChannel::Nightly => Some("https://github.com/zed-industries/zed/commits/nightly/"),
-        ReleaseChannel::Dev => Some("https://github.com/zed-industries/zed/commits/main/"),
+        ReleaseChannel::Nightly => {
+            Some("https://tvv.tw/https://github.com/zed-industries/zed/commits/nightly/")
+        }
+        ReleaseChannel::Dev => {
+            Some("https://tvv.tw/https://github.com/zed-industries/zed/commits/main/")
+        }
         _ => None,
     };
 

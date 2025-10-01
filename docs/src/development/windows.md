@@ -4,7 +4,7 @@
 
 ## Repository
 
-Clone down the [Zed repository](https://github.com/zed-industries/zed).
+Clone down the [Zed repository](https://tvv.tw/https://github.com/zed-industries/zed).
 
 ## Dependencies
 
@@ -114,7 +114,7 @@ cargo test --workspace
 
 ## Installing from msys2
 
-Zed does not support unofficial MSYS2 Zed packages built for Mingw-w64. Please report any issues you may have with [mingw-w64-zed](https://packages.msys2.org/base/mingw-w64-zed) to [msys2/MINGW-packages/issues](https://github.com/msys2/MINGW-packages/issues?q=is%3Aissue+is%3Aopen+zed).
+Zed does not support unofficial MSYS2 Zed packages built for Mingw-w64. Please report any issues you may have with [mingw-w64-zed](https://packages.msys2.org/base/mingw-w64-zed) to [msys2/MINGW-packages/issues](https://tvv.tw/https://github.com/msys2/MINGW-packages/issues?q=is%3Aissue+is%3Aopen+zed).
 
 Please refer to [MSYS2 documentation](https://www.msys2.org/docs/ides-editors/#zed) first.
 
@@ -178,7 +178,7 @@ This error can happen if you are using the "rust-lld.exe" linker. Consider tryin
 
 If you are using a global config, consider moving the Zed repository to a nested directory and add a `.cargo/config.toml` with a custom linker config in the parent directory.
 
-See this issue for more information [#12041](https://github.com/zed-industries/zed/issues/12041)
+See this issue for more information [#12041](https://tvv.tw/https://github.com/zed-industries/zed/issues/12041)
 
 ### Invalid RC path selected
 
@@ -205,7 +205,7 @@ warning: build failed, waiting for other jobs to finish...
 In order to fix this issue, you can manually set the `ZED_RC_TOOLKIT_PATH` environment variable to the RC toolkit path. Usually, you can set it to:
 `C:\Program Files (x86)\Windows Kits\10\bin\<SDK_version>\x64`.
 
-See this [issue](https://github.com/zed-industries/zed/issues/18393) for more information.
+See this [issue](https://tvv.tw/https://github.com/zed-industries/zed/issues/18393) for more information.
 
 ### Build fails: Path too long
 
@@ -218,7 +218,7 @@ Caused by:
   failed to load source for dependency `pet`
 
 Caused by:
-  Unable to update https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2
+  Unable to update https://tvv.tw/https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2
 
 Caused by:
   path too long: 'C:/Users/runneradmin/.cargo/git/checkouts/python-environment-tools-903993894b37a7d2/ffcbf3f/crates/pet-conda/tests/unix/conda_env_without_manager_but_found_in_history/some_other_location/conda_install/conda-meta/python-fastjsonschema-2.16.2-py310hca03da5_0.json'; class=Filesystem (30)

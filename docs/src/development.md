@@ -81,7 +81,7 @@ The `script/histogram` tool can accept as many measurement files as you like and
 
 ## Contributor links
 
-- [CONTRIBUTING.md](https://github.com/zed-industries/zed/blob/main/CONTRIBUTING.md)
+- [CONTRIBUTING.md](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/CONTRIBUTING.md)
 - [Releases](./development/releases.md)
 - [Debugging Crashes](./development/debugging-crashes.md)
 - [Code of Conduct](https://zed.dev/code-of-conduct)

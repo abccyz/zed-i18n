@@ -2,9 +2,9 @@
 
 Rust support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-rust](https://github.com/tree-sitter/tree-sitter-rust)
-- Language Server: [rust-lang/rust-analyzer](https://github.com/rust-lang/rust-analyzer)
-- Debug Adapter: [CodeLLDB](https://github.com/vadimcn/codelldb) (primary), [GDB](https://sourceware.org/gdb/) (secondary, not available on Apple silicon)
+- Tree-sitter: [tree-sitter/tree-sitter-rust](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-rust)
+- Language Server: [rust-lang/rust-analyzer](https://tvv.tw/https://github.com/rust-lang/rust-analyzer)
+- Debug Adapter: [CodeLLDB](https://tvv.tw/https://github.com/vadimcn/codelldb) (primary), [GDB](https://sourceware.org/gdb/) (secondary, not available on Apple silicon)
 
 <!--
 TBD: Polish Rust Docs. Zed is a good rust editor, good Rust docs make it look like we care about Rust (we do!)
@@ -155,7 +155,7 @@ If disabled with `checkOnSave: false` (see the example of the server configurati
 ## More server configuration
 
 <!--
-TBD: Is it possible to specify RUSTFLAGS? https://github.com/zed-industries/zed/issues/14334
+TBD: Is it possible to specify RUSTFLAGS? https://tvv.tw/https://github.com/zed-industries/zed/issues/14334
 -->
 
 Rust-analyzer [manual](https://rust-analyzer.github.io/book/) describes various features and configuration options for rust-analyzer language server.

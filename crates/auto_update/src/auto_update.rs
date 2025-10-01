@@ -231,10 +231,10 @@ pub fn view_release_notes(_: &ViewReleaseNotes, cx: &mut App) -> Option<()> {
             cx.open_url(url);
         }
         ReleaseChannel::Nightly => {
-            cx.open_url("https://github.com/zed-industries/zed/commits/nightly/");
+            cx.open_url("https://tvv.tw/https://github.com/zed-industries/zed/commits/nightly/");
         }
         ReleaseChannel::Dev => {
-            cx.open_url("https://github.com/zed-industries/zed/commits/main/");
+            cx.open_url("https://tvv.tw/https://github.com/zed-industries/zed/commits/main/");
         }
     }
     None

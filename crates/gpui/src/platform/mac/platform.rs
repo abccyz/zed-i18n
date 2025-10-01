@@ -318,7 +318,7 @@ impl MacPlatform {
                 } => {
                     // Note that this is intentionally using earlier bindings, whereas typically
                     // later ones take display precedence. See the discussion on
-                    // https://github.com/zed-industries/zed/issues/23621
+                    // https://tvv.tw/https://github.com/zed-industries/zed/issues/23621
                     let keystrokes = keymap
                         .bindings_for_action(action.as_ref())
                         .find_or_first(|binding| {
@@ -789,7 +789,7 @@ impl Platform for MacPlatform {
                                         .split(|&b| b == b'.')
                                         .collect::<Vec<_>>();
 
-                                    // https://github.com/zed-industries/zed/issues/16969
+                                    // https://tvv.tw/https://github.com/zed-industries/zed/issues/16969
                                     // Workaround a bug in macOS Sequoia that adds an extra file-extension
                                     // sometimes. e.g. `a.sql` becomes `a.sql.s` or `a.txtx` becomes `a.txtx.txt`
                                     //
@@ -1367,7 +1367,7 @@ extern "C" fn will_finish_launching(_this: &mut Object, _: Sel, _: id) {
         // The autofill heuristic controller causes slowdown and high CPU usage.
         // We don't know exactly why. This disables the full heuristic controller.
         //
-        // Adapted from: https://github.com/ghostty-org/ghostty/pull/8625
+        // Adapted from: https://tvv.tw/https://github.com/ghostty-org/ghostty/pull/8625
         let name = ns_string("NSAutoFillHeuristicControllerEnabled");
         let existing_value: id = msg_send![user_defaults, objectForKey: name];
         if existing_value == nil {

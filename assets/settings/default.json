@@ -72,6 +72,7 @@
   "ui_font_weight": 400,
   // The default font size for text in the UI
   "ui_font_size": 16,
+  "ui_language": "zh-CN",
   // The default font size for text in the agent panel. Falls back to the UI font size if unset.
   "agent_font_size": null,
   // How much to fade out unused code.

@@ -1,9 +1,9 @@
 # Dart
 
-Dart support is available through the [Dart extension](https://github.com/zed-extensions/dart).
+Dart support is available through the [Dart extension](https://tvv.tw/https://github.com/zed-extensions/dart).
 
-- Tree-sitter: [UserNobody14/tree-sitter-dart](https://github.com/UserNobody14/tree-sitter-dart)
-- Language Server: [dart language-server](https://github.com/dart-lang/sdk)
+- Tree-sitter: [UserNobody14/tree-sitter-dart](https://tvv.tw/https://github.com/UserNobody14/tree-sitter-dart)
+- Language Server: [dart language-server](https://tvv.tw/https://github.com/dart-lang/sdk)
 
 ## Pre-requisites
 
@@ -51,4 +51,4 @@ Dart by-default uses a very conservative maximum line length (80). If you would 
 }
 ```
 
-Please see the Dart documentation for more information on [dart language-server capabilities](https://github.com/dart-lang/sdk/blob/main/pkg/analysis_server/tool/lsp_spec/README.md).
+Please see the Dart documentation for more information on [dart language-server capabilities](https://tvv.tw/https://github.com/dart-lang/sdk/blob/main/pkg/analysis_server/tool/lsp_spec/README.md).

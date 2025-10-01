@@ -1,10 +1,10 @@
 # Bash
 
-Bash language support in Zed is provided by the community-maintained [Basher extension](https://github.com/d1y/bash.zed).
-Report issues to: [https://github.com/d1y/bash.zed/issues](https://github.com/d1y/bash.zed/issues)
+Bash language support in Zed is provided by the community-maintained [Basher extension](https://tvv.tw/https://github.com/d1y/bash.zed).
+Report issues to: [https://tvv.tw/https://github.com/d1y/bash.zed/issues](https://tvv.tw/https://github.com/d1y/bash.zed/issues)
 
-- Tree-sitter: [tree-sitter/tree-sitter-bash](https://github.com/tree-sitter/tree-sitter-bash)
-- Language Server: [bash-lsp/bash-language-server](https://github.com/bash-lsp/bash-language-server)
+- Tree-sitter: [tree-sitter/tree-sitter-bash](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-bash)
+- Language Server: [bash-lsp/bash-language-server](https://tvv.tw/https://github.com/bash-lsp/bash-language-server)
 
 ## Configuration
 
@@ -29,7 +29,7 @@ which shellcheck
 shellcheck --version
 ```
 
-If you wish to customize the warnings/errors reported you just need to create a `.shellcheckrc` file. You can do this in the root of your project or in your home directory (`~/.shellcheckrc`). See: [shellcheck documentation](https://github.com/koalaman/shellcheck/wiki/Ignore#ignoring-one-or-more-types-of-errors-forever) for more.
+If you wish to customize the warnings/errors reported you just need to create a `.shellcheckrc` file. You can do this in the root of your project or in your home directory (`~/.shellcheckrc`). See: [shellcheck documentation](https://tvv.tw/https://github.com/koalaman/shellcheck/wiki/Ignore#ignoring-one-or-more-types-of-errors-forever) for more.
 
 ### See also:
 

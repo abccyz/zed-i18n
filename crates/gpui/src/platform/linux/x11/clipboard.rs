@@ -3,7 +3,7 @@
  * License: Apache-2.0
  * See LICENSE-APACHE for complete license terms
  *
- * Adapted from the x11 submodule of the arboard project https://github.com/1Password/arboard
+ * Adapted from the x11 submodule of the arboard project https://tvv.tw/https://github.com/1Password/arboard
  *
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  *

@@ -2,9 +2,9 @@
 
 Go support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-go](https://github.com/tree-sitter/tree-sitter-go)
-- Language Server: [golang/tools/tree/master/gopls](https://github.com/golang/tools/tree/master/gopls)
-- Debug Adapter: [delve](https://github.com/go-delve/delve)
+- Tree-sitter: [tree-sitter/tree-sitter-go](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-go)
+- Language Server: [golang/tools/tree/master/gopls](https://tvv.tw/https://github.com/golang/tools/tree/master/gopls)
+- Debug Adapter: [delve](https://tvv.tw/https://github.com/go-delve/delve)
 
 ## Setup
 
@@ -71,7 +71,7 @@ Use
 
 to override these settings.
 
-See [gopls inlayHints documentation](https://github.com/golang/tools/blob/master/gopls/doc/inlayHints.md) for more information.
+See [gopls inlayHints documentation](https://tvv.tw/https://github.com/golang/tools/blob/master/gopls/doc/inlayHints.md) for more information.
 
 ## Debugging
 
@@ -181,16 +181,16 @@ In such case Zed won't spawn a new instance of Delve, as it opts to use an exist
 
 ## Go Mod
 
-- Tree-sitter: [camdencheek/tree-sitter-go-mod](https://github.com/camdencheek/tree-sitter-go-mod)
+- Tree-sitter: [camdencheek/tree-sitter-go-mod](https://tvv.tw/https://github.com/camdencheek/tree-sitter-go-mod)
 - Language Server: N/A
 
 ## Go Sum
 
-- Tree-sitter: [amaanq/tree-sitter-go-sum](https://github.com/amaanq/tree-sitter-go-sum)
+- Tree-sitter: [amaanq/tree-sitter-go-sum](https://tvv.tw/https://github.com/amaanq/tree-sitter-go-sum)
 - Language Server: N/A
 
 ## Go Work
 
 - Tree-sitter:
-  [tree-sitter-go-work](https://github.com/d1y/tree-sitter-go-work)
+  [tree-sitter-go-work](https://tvv.tw/https://github.com/d1y/tree-sitter-go-work)
 - Language Server: N/A

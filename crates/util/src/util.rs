@@ -294,7 +294,7 @@ pub fn get_shell_safe_zed_path() -> anyhow::Result<String> {
     let zed_path = std::env::current_exe()
         .context("Failed to determine current zed executable path.")?
         .to_string_lossy()
-        .trim_end_matches(" (deleted)") // see https://github.com/rust-lang/rust/issues/69343
+        .trim_end_matches(" (deleted)") // see https://tvv.tw/https://github.com/rust-lang/rust/issues/69343
         .to_string();
 
     // As of writing, this can only be fail if the path contains a null byte, which shouldn't be possible

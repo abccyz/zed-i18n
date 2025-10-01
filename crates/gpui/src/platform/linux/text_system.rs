@@ -150,7 +150,7 @@ impl PlatformTextSystem for CosmicTextSystem {
         let glyph_metrics = lock.loaded_font(font_id).font.as_swash().glyph_metrics(&[]);
         let glyph_id = glyph_id.0 as u16;
         // todo(linux): Compute this correctly
-        // see https://github.com/servo/font-kit/blob/master/src/loaders/freetype.rs#L614-L620
+        // see https://tvv.tw/https://github.com/servo/font-kit/blob/master/src/loaders/freetype.rs#L614-L620
         Ok(Bounds {
             origin: point(0.0, 0.0),
             size: size(

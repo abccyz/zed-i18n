@@ -128,7 +128,7 @@ jobs:
       - uses: bufbuild/buf-breaking-action@v1
         with:
           input: "crates/proto/proto/"
-          against: "https://github.com/${GITHUB_REPOSITORY}.git#branch=${BUF_BASE_BRANCH},subdir=crates/proto/proto/"
+          against: "https://tvv.tw/https://github.com/${GITHUB_REPOSITORY}.git#branch=${BUF_BASE_BRANCH},subdir=crates/proto/proto/"
 
   workspace_hack:
     timeout-minutes: 60
@@ -538,7 +538,7 @@ jobs:
             [[ "${{ needs.linux_tests.result }}"          != 'success' ]] && { RET_CODE=1; echo "Linux tests failed"; }
             [[ "${{ needs.windows_tests.result }}"        != 'success' ]] && { RET_CODE=1; echo "Windows tests failed"; }
             [[ "${{ needs.build_remote_server.result }}"  != 'success' ]] && { RET_CODE=1; echo "Remote server build failed"; }
-            # This check is intentionally disabled. See: https://github.com/zed-industries/zed/pull/28431
+            # This check is intentionally disabled. See: https://tvv.tw/https://github.com/zed-industries/zed/pull/28431
             # [[ "${{ needs.migration_checks.result }}"     != 'success' ]] && { RET_CODE=1; echo "Migration Checks failed"; }
           fi
           if [[ "$RET_CODE" -eq 0 ]]; then

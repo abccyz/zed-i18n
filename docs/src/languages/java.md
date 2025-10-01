@@ -2,9 +2,9 @@
 
 Java language support in Zed is provided by:
 
-- Zed Java: [zed-extensions/java](https://github.com/zed-extensions/java)
-- Tree-sitter: [tree-sitter/tree-sitter-java](https://github.com/tree-sitter/tree-sitter-java)
-- Language Server: [eclipse-jdtls/eclipse.jdt.ls](https://github.com/eclipse-jdtls/eclipse.jdt.ls)
+- Zed Java: [zed-extensions/java](https://tvv.tw/https://github.com/zed-extensions/java)
+- Tree-sitter: [tree-sitter/tree-sitter-java](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-java)
+- Language Server: [eclipse-jdtls/eclipse.jdt.ls](https://tvv.tw/https://github.com/eclipse-jdtls/eclipse.jdt.ls)
 
 ## Install OpenJDK
 
@@ -25,7 +25,7 @@ You can install either by opening {#action zed::Extensions}({#kb zed::Extensions
 
 The extension will automatically download the language server, see: [Manual JDTLS Install](#manual-jdts-install) below if you'd prefer to manage that yourself.
 
-For available `initialization_options` please see the [Initialize Request section of the Eclipse.jdt.ls Wiki](https://github.com/eclipse-jdtls/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request).
+For available `initialization_options` please see the [Initialize Request section of the Eclipse.jdt.ls Wiki](https://tvv.tw/https://github.com/eclipse-jdtls/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request).
 
 You can add these customizations to your Zed Settings by launching {#action zed::OpenSettings}({#kb zed::OpenSettings}) or by using a `.zed/setting.json` inside your project.
 
@@ -164,5 +164,5 @@ Or manually download install:
 
 ## See also
 
-- [Zed Java Repo](https://github.com/zed-extensions/java)
-- [Zed Java Issues](https://github.com/zed-extensions/java/issues)
+- [Zed Java Repo](https://tvv.tw/https://github.com/zed-extensions/java)
+- [Zed Java Issues](https://tvv.tw/https://github.com/zed-extensions/java/issues)

@@ -20,7 +20,7 @@ Anthropic Python SDK README:
 
 The Anthropic Python library provides convenient access to the Anthropic REST API from any Python 3.8+
 application. It includes type definitions for all request params and response fields,
-and offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx).
+and offers both synchronous and asynchronous clients powered by [httpx](https://tvv.tw/https://github.com/encode/httpx).
 
 ## Documentation
 
@@ -283,7 +283,7 @@ AnthropicBedrock(
 )
 ```
 
-For a more fully fledged example see [`examples/bedrock.py`](https://github.com/anthropics/anthropic-sdk-python/blob/main/examples/bedrock.py).
+For a more fully fledged example see [`examples/bedrock.py`](https://tvv.tw/https://github.com/anthropics/anthropic-sdk-python/blob/main/examples/bedrock.py).
 
 ## Google Vertex
 
@@ -309,7 +309,7 @@ message = client.messages.create(
 print(message)
 ```
 
-For a more complete example see [`examples/vertex.py`](https://github.com/anthropics/anthropic-sdk-python/blob/main/examples/vertex.py).
+For a more complete example see [`examples/vertex.py`](https://tvv.tw/https://github.com/anthropics/anthropic-sdk-python/blob/main/examples/vertex.py).
 
 ## Using types
 
@@ -614,7 +614,7 @@ message = response.parse()  # get the object that `messages.create()` would have
 print(message.content)
 ```
 
-These methods return a [`LegacyAPIResponse`](https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_legacy_response.py) object. This is a legacy class as we're changing it slightly in the next major version.
+These methods return a [`LegacyAPIResponse`](https://tvv.tw/https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_legacy_response.py) object. This is a legacy class as we're changing it slightly in the next major version.
 
 For the sync client this will mostly be the same with the exception
 of `content` & `text` will be methods instead of properties. In the
@@ -629,7 +629,7 @@ The above interface eagerly reads the full response body when you make the reque
 
 To stream the response body, use `.with_streaming_response` instead, which requires a context manager and only reads the response body once you call `.read()`, `.text()`, `.json()`, `.iter_bytes()`, `.iter_text()`, `.iter_lines()` or `.parse()`. In the async client, these are async methods.
 
-As such, `.with_streaming_response` methods return a different [`APIResponse`](https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_response.py) object, and the async client returns an [`AsyncAPIResponse`](https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_response.py) object.
+As such, `.with_streaming_response` methods return a different [`APIResponse`](https://tvv.tw/https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_response.py) object, and the async client returns an [`AsyncAPIResponse`](https://tvv.tw/https://github.com/anthropics/anthropic-sdk-python/tree/main/src/anthropic/_response.py) object.
 
 ```python
 with client.messages.with_streaming_response.create(
@@ -812,7 +812,7 @@ MCP Python SDK README:
 [pypi-badge]: https://img.shields.io/pypi/v/mcp.svg
 [pypi-url]: https://pypi.org/project/mcp/
 [mit-badge]: https://img.shields.io/pypi/l/mcp.svg
-[mit-url]: https://github.com/modelcontextprotocol/python-sdk/blob/main/LICENSE
+[mit-url]: https://tvv.tw/https://github.com/modelcontextprotocol/python-sdk/blob/main/LICENSE
 [python-badge]: https://img.shields.io/pypi/pyversions/mcp.svg
 [python-url]: https://www.python.org/downloads/
 [docs-badge]: https://img.shields.io/badge/docs-modelcontextprotocol.io-blue.svg
@@ -820,7 +820,7 @@ MCP Python SDK README:
 [spec-badge]: https://img.shields.io/badge/spec-spec.modelcontextprotocol.io-blue.svg
 [spec-url]: https://spec.modelcontextprotocol.io
 [discussions-badge]: https://img.shields.io/github/discussions/modelcontextprotocol/python-sdk
-[discussions-url]: https://github.com/modelcontextprotocol/python-sdk/discussions
+[discussions-url]: https://tvv.tw/https://github.com/modelcontextprotocol/python-sdk/discussions
 
 ## Overview
 
@@ -1409,7 +1409,7 @@ MCP servers declare capabilities during initialization:
 
 - [Model Context Protocol documentation](https://modelcontextprotocol.io)
 - [Model Context Protocol specification](https://spec.modelcontextprotocol.io)
-- [Officially supported servers](https://github.com/modelcontextprotocol/servers)
+- [Officially supported servers](https://tvv.tw/https://github.com/modelcontextprotocol/servers)
 
 ## Contributing
 

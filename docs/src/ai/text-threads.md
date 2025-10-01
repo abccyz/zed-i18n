@@ -236,15 +236,15 @@ Zed allows you to override the default rules used for various assistant features
 
 The following templates can be overridden:
 
-1. [`content_prompt.hbs`](https://github.com/zed-industries/zed/tree/main/assets/prompts/content_prompt.hbs): Used for generating content in the editor.
+1. [`content_prompt.hbs`](https://tvv.tw/https://github.com/zed-industries/zed/tree/main/assets/prompts/content_prompt.hbs): Used for generating content in the editor.
 
-2. [`terminal_assistant_prompt.hbs`](https://github.com/zed-industries/zed/tree/main/assets/prompts/terminal_assistant_prompt.hbs): Used for the terminal assistant feature.
+2. [`terminal_assistant_prompt.hbs`](https://tvv.tw/https://github.com/zed-industries/zed/tree/main/assets/prompts/terminal_assistant_prompt.hbs): Used for the terminal assistant feature.
 
 > **Note:** Be sure you want to override these, as you'll miss out on iteration on our built-in features. This should be primarily used when developing Zed.
 
 You can customize these templates to better suit your needs while maintaining the core structure and variables used by Zed. Zed will automatically reload your prompt overrides when they change on disk.
 
-Consult Zed's [assets/prompts](https://github.com/zed-industries/zed/tree/main/assets/prompts) directory for current versions you can play with.
+Consult Zed's [assets/prompts](https://tvv.tw/https://github.com/zed-industries/zed/tree/main/assets/prompts) directory for current versions you can play with.
 
 ### History {#history}
 

@@ -894,7 +894,7 @@ impl Server {
                         if let Some(message) = message {
                             let type_name = message.payload_type_name();
                             // note: we copy all the fields from the parent span so we can query them in the logs.
-                            // (https://github.com/tokio-rs/tracing/issues/2670).
+                            // (https://tvv.tw/https://github.com/tokio-rs/tracing/issues/2670).
                             let span = tracing::info_span!("receive message",
                                 %connection_id,
                                 %address,
@@ -2609,7 +2609,10 @@ async fn get_users(
         .into_iter()
         .map(|user| proto::User {
             id: user.id.to_proto(),
-            avatar_url: format!("https://github.com/{}.png?size=128", user.github_login),
+            avatar_url: format!(
+                "https://tvv.tw/https://github.com/{}.png?size=128",
+                user.github_login
+            ),
             github_login: user.github_login,
             name: user.name,
         })
@@ -2641,7 +2644,10 @@ async fn fuzzy_search_users(
         .filter(|user| user.id != session.user_id())
         .map(|user| proto::User {
             id: user.id.to_proto(),
-            avatar_url: format!("https://github.com/{}.png?size=128", user.github_login),
+            avatar_url: format!(
+                "https://tvv.tw/https://github.com/{}.png?size=128",
+                user.github_login
+            ),
             github_login: user.github_login,
             name: user.name,
         })
@@ -3749,7 +3755,7 @@ fn to_axum_message(message: TungsteniteMessage) -> anyhow::Result<AxumMessage> {
         // > can be used when you want to send the raw frames (e.g. you want to
         // > send the frames to the WebSocket without composing the full message first).
         // >
-        // > — https://github.com/snapview/tungstenite-rs/issues/268
+        // > — https://tvv.tw/https://github.com/snapview/tungstenite-rs/issues/268
         TungsteniteMessage::Frame(_) => {
             bail!("received an unexpected frame while reading the message")
         }

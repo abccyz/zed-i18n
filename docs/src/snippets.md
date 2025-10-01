@@ -56,4 +56,4 @@ If you want to enable it you can add the following to your `settings.json`:
 }
 ```
 
-For more configuration information, see the [`simple-completion-language-server` instructions](https://github.com/zed-industries/simple-completion-language-server/tree/main).
+For more configuration information, see the [`simple-completion-language-server` instructions](https://tvv.tw/https://github.com/zed-industries/simple-completion-language-server/tree/main).

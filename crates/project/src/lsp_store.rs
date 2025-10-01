@@ -6100,7 +6100,7 @@ impl LspStore {
 
         let mut new_label = match completion_item {
             Some(completion_item) => {
-                // NB: Zed does not have `details` inside the completion resolve capabilities, but certain language servers violate the spec and do not return `details` immediately, e.g. https://github.com/yioneko/vtsls/issues/213
+                // NB: Zed does not have `details` inside the completion resolve capabilities, but certain language servers violate the spec and do not return `details` immediately, e.g. https://tvv.tw/https://github.com/yioneko/vtsls/issues/213
                 // So we have to update the label here anyway...
                 let language = snapshot.language();
                 match language {
@@ -6339,7 +6339,7 @@ impl LspStore {
                             // Special case: if both ranges start at the very beginning of the file (line 0, column 0),
                             // and the primary completion is just an insertion (empty range), then this is likely
                             // an auto-import scenario and should not be considered overlapping
-                            // https://github.com/zed-industries/zed/issues/26136
+                            // https://tvv.tw/https://github.com/zed-industries/zed/issues/26136
                             let is_file_start_auto_import = {
                                 let snapshot = buffer.snapshot();
                                 let primary_start_point = primary.start.to_point(&snapshot);
@@ -6365,7 +6365,7 @@ impl LspStore {
                             };
 
                             //Skip additional edits which overlap with the primary completion edit
-                            //https://github.com/zed-industries/zed/pull/1871
+                            //https://tvv.tw/https://github.com/zed-industries/zed/pull/1871
                             if !has_overlap {
                                 buffer.edit([(range, text)], None, cx);
                             }
@@ -11805,7 +11805,7 @@ impl LspStore {
 }
 
 // Registration with registerOptions as null, should fallback to true.
-// https://github.com/microsoft/vscode-languageserver-node/blob/d90a87f9557a0df9142cfb33e251cfa6fe27d970/client/src/common/client.ts#L2133
+// https://tvv.tw/https://github.com/microsoft/vscode-languageserver-node/blob/d90a87f9557a0df9142cfb33e251cfa6fe27d970/client/src/common/client.ts#L2133
 fn parse_register_capabilities<T: serde::de::DeserializeOwned>(
     reg: lsp::Registration,
 ) -> Result<OneOf<bool, T>> {

@@ -114,7 +114,7 @@ impl Display for MarkdownInlineCode<'_> {
         // * Handling of all whitespace. pulldown-cmark-to-cmark is anticipating
         // `Code` events parsed by pulldown-cmark.
         //
-        // https://github.com/Byron/pulldown-cmark-to-cmark/blob/3c850de2d3d1d79f19ca5f375e1089a653cf3ff7/src/lib.rs#L290
+        // https://tvv.tw/https://github.com/Byron/pulldown-cmark-to-cmark/blob/3c850de2d3d1d79f19ca5f375e1089a653cf3ff7/src/lib.rs#L290
 
         let mut all_whitespace = true;
         let text = self
@@ -158,7 +158,7 @@ impl Display for MarkdownCodeBlock<'_> {
 }
 
 // Copied from `pulldown-cmark-to-cmark-20.0.0` with changed names.
-// https://github.com/Byron/pulldown-cmark-to-cmark/blob/3c850de2d3d1d79f19ca5f375e1089a653cf3ff7/src/lib.rs#L1063
+// https://tvv.tw/https://github.com/Byron/pulldown-cmark-to-cmark/blob/3c850de2d3d1d79f19ca5f375e1089a653cf3ff7/src/lib.rs#L1063
 // Apache License 2.0, same as this code.
 fn count_max_consecutive_chars(text: &str, search: char) -> usize {
     let mut in_search_chars = false;

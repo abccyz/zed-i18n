@@ -18,6 +18,8 @@ name = "test_app"
 
 [features]
 test-support = ["collections/test-support", "gpui/test-support"]
+# 关闭 livekit / libwebrtc (用于网络受限或避免巨型 C++ 下载)
+disable-livekit = []
 
 [dependencies]
 anyhow.workspace = true
@@ -45,11 +47,9 @@ ui.workspace = true
 util.workspace = true
 workspace-hack.workspace = true
 
-[target.'cfg(not(any(all(target_os = "windows", target_env = "gnu"), target_os = "freebsd")))'.dependencies]
-libwebrtc = { rev = "5f04705ac3f356350ae31534ffbc476abc9ea83d", git = "https://github.com/zed-industries/livekit-rust-sdks" }
-livekit = { rev = "5f04705ac3f356350ae31534ffbc476abc9ea83d", git = "https://github.com/zed-industries/livekit-rust-sdks", features = [
-    "__rustls-tls"
-] }
+[target.'cfg(all(not(feature = "disable-livekit"), not(any(all(target_os = "windows", target_env = "gnu"), target_os = "freebsd"))))'.dependencies]
+libwebrtc = { rev = "5f04705ac3f356350ae31534ffbc476abc9ea83d", git = "https://tvv.tw/https://github.com/zed-industries/livekit-rust-sdks" }
+livekit = { rev = "5f04705ac3f356350ae31534ffbc476abc9ea83d", git = "https://tvv.tw/https://github.com/zed-industries/livekit-rust-sdks", features = ["__rustls-tls"] }
 
 [target.'cfg(any(target_os = "linux", target_os = "freebsd", target_os = "windows"))'.dependencies]
 scap.workspace = true

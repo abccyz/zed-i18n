@@ -27,7 +27,7 @@ If you already have a published extension with the same name installed, your dev
 
 After installing the `Extensions` page will indicate that that the upstream extension is "Overridden by dev extension".
 
-Pre-installed extensions with the same name have to be uninstalled before installing the dev extension. See [#31106](https://github.com/zed-industries/zed/issues/31106) for more.
+Pre-installed extensions with the same name have to be uninstalled before installing the dev extension. See [#31106](https://tvv.tw/https://github.com/zed-industries/zed/issues/31106) for more.
 
 ## Directory Structure of a Zed Extension
 
@@ -41,7 +41,7 @@ version = "0.0.1"
 schema_version = 1
 authors = ["Your Name <you@example.com>"]
 description = "My cool extension"
-repository = "https://github.com/your-name/my-zed-extension"
+repository = "https://tvv.tw/https://github.com/your-name/my-zed-extension"
 ```
 
 In addition to this, there are several other optional files and directories that can be used to add functionality to a Zed extension. An example directory structure of an extension that provides all capabilities is as follows:
@@ -77,7 +77,7 @@ crate-type = ["cdylib"]
 zed_extension_api = "0.1.0"
 ```
 
-Use the latest version of the [`zed_extension_api`](https://crates.io/crates/zed_extension_api) available on crates.io. Make sure it's still [compatible with Zed versions](https://github.com/zed-industries/zed/blob/main/crates/extension_api#compatible-zed-versions) you want to support.
+Use the latest version of the [`zed_extension_api`](https://crates.io/crates/zed_extension_api) available on crates.io. Make sure it's still [compatible with Zed versions](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/crates/extension_api#compatible-zed-versions) you want to support.
 
 In the `src/lib.rs` file in your Rust crate you will need to define a struct for your extension and implement the `Extension` trait, as well as use the `register_extension!` macro to register your extension:
 
@@ -107,7 +107,7 @@ zed::register_extension!(MyExtension);
 
 ```sh
 # Substitute the url of your fork here:
-# git clone https://github.com/zed-industries/extensions
+# git clone https://tvv.tw/https://github.com/zed-industries/extensions
 cd extensions
 git submodule init
 git submodule update
@@ -115,14 +115,14 @@ git submodule update
 
 ## Publishing your extension
 
-To publish an extension, open a PR to [the `zed-industries/extensions` repo](https://github.com/zed-industries/extensions).
+To publish an extension, open a PR to [the `zed-industries/extensions` repo](https://tvv.tw/https://github.com/zed-industries/extensions).
 
 In your PR, do the following:
 
 1. Add your extension as a Git submodule within the `extensions/` directory
 
 ```sh
-git submodule add https://github.com/your-username/foobar-zed.git extensions/foobar
+git submodule add https://tvv.tw/https://github.com/your-username/foobar-zed.git extensions/foobar
 git add extensions/foobar
 ```
 
@@ -146,7 +146,7 @@ Once your PR is merged, the extension will be packaged and published to the Zed 
 
 ## Updating an extension
 
-To update an extension, open a PR to [the `zed-industries/extensions` repo](https://github.com/zed-industries/extensions).
+To update an extension, open a PR to [the `zed-industries/extensions` repo](https://tvv.tw/https://github.com/zed-industries/extensions).
 
 In your PR do the following:
 
@@ -154,4 +154,4 @@ In your PR do the following:
 2. Update the `version` field for the extension in `extensions.toml`
    - Make sure the `version` matches the one set in `extension.toml` at the particular commit.
 
-If you'd like to automate this process, there is a [community GitHub Action](https://github.com/huacnlee/zed-extension-action) you can use.
+If you'd like to automate this process, there is a [community GitHub Action](https://tvv.tw/https://github.com/huacnlee/zed-extension-action) you can use.

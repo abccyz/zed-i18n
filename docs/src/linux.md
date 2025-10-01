@@ -21,7 +21,7 @@ The Zed installed by the script works best on systems that:
   - x86_64 (Intel/AMD): glibc version >= 2.31 (Ubuntu 20 and newer)
   - aarch64 (ARM): glibc version >= 2.35 (Ubuntu 22 and newer)
 
-Both Nix and Alpine have third-party Zed packages available (though they are currently a few weeks out of date). If you'd like to use our builds they do work if you install a glibc compatibility layer. On NixOS you can try [nix-ld](https://github.com/Mic92/nix-ld), and on Alpine [gcompat](https://wiki.alpinelinux.org/wiki/Running_glibc_programs).
+Both Nix and Alpine have third-party Zed packages available (though they are currently a few weeks out of date). If you'd like to use our builds they do work if you install a glibc compatibility layer. On NixOS you can try [nix-ld](https://tvv.tw/https://github.com/Mic92/nix-ld), and on Alpine [gcompat](https://wiki.alpinelinux.org/wiki/Running_glibc_programs).
 
 You will need to build from source for:
 
@@ -42,8 +42,8 @@ There are several third-party Zed packages for various Linux distributions and p
 - Arch (AUR): [`zed-git`](https://aur.archlinux.org/packages/zed-git), [`zed-preview`](https://aur.archlinux.org/packages/zed-preview), [`zed-preview-bin`](https://aur.archlinux.org/packages/zed-preview-bin)
 - Alpine: `zed` ([aarch64](https://pkgs.alpinelinux.org/package/edge/testing/aarch64/zed)) ([x86_64](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/zed))
 - Nix: `zed-editor` ([unstable](https://search.nixos.org/packages?channel=unstable&show=zed-editor))
-- Fedora/Ultramarine (Terra): [`zed`](https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/stable), [`zed-preview`](https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/preview), [`zed-nightly`](https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/nightly)
-- Solus: [`zed`](https://github.com/getsolus/packages/tree/main/packages/z/zed)
+- Fedora/Ultramarine (Terra): [`zed`](https://tvv.tw/https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/stable), [`zed-preview`](https://tvv.tw/https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/preview), [`zed-nightly`](https://tvv.tw/https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/nightly)
+- Solus: [`zed`](https://tvv.tw/https://github.com/getsolus/packages/tree/main/packages/z/zed)
 - Parabola: [`zed`](https://www.parabola.nu/packages/extra/x86_64/zed/)
 - Manjaro: [`zed`](https://packages.manjaro.org/?query=zed)
 - ALT Linux (Sisyphus): [`zed`](https://packages.altlinux.org/en/sisyphus/srpms/zed/)
@@ -129,7 +129,7 @@ If you see an error like "/lib64/libc.so.6: version 'GLIBC_2.29' not found" it m
 
 Zed requires a GPU to run effectively. Under the hood, we use [Vulkan](https://www.vulkan.org/) to communicate with your GPU. If you are seeing problems with performance, or Zed fails to load, it is possible that Vulkan is the culprit.
 
-If you see a notification saying `Zed failed to open a window: NoSupportedDeviceFound` this means that Vulkan cannot find a compatible GPU. you can try running [vkcube](https://github.com/krh/vkcube) (usually available as part of the `vulkaninfo` or `vulkan-tools` package on various distributions) to try to troubleshoot where the issue is coming from like so:
+If you see a notification saying `Zed failed to open a window: NoSupportedDeviceFound` this means that Vulkan cannot find a compatible GPU. you can try running [vkcube](https://tvv.tw/https://github.com/krh/vkcube) (usually available as part of the `vulkaninfo` or `vulkan-tools` package on various distributions) to try to troubleshoot where the issue is coming from like so:
 
 ```
 vkcube
@@ -141,17 +141,17 @@ This should output a line describing your current graphics setup and show a rota
 
 You can find out which graphics card Zed is using by looking in the Zed log (`~/.local/share/zed/logs/Zed.log`) for `Using GPU: ...`.
 
-If you see errors like `ERROR_INITIALIZATION_FAILED` or `GPU Crashed` or `ERROR_SURFACE_LOST_KHR` then you may be able to work around this by installing different drivers for your GPU, or by selecting a different GPU to run on. (See [#14225](https://github.com/zed-industries/zed/issues/14225))
+If you see errors like `ERROR_INITIALIZATION_FAILED` or `GPU Crashed` or `ERROR_SURFACE_LOST_KHR` then you may be able to work around this by installing different drivers for your GPU, or by selecting a different GPU to run on. (See [#14225](https://tvv.tw/https://github.com/zed-industries/zed/issues/14225))
 
 On some systems the file `/etc/prime-discrete` can be used to enforce the use of a discrete GPU using [PRIME](https://wiki.archlinux.org/title/PRIME). Depending on the details of your setup, you may need to change the contents of this file to "on" (to force discrete graphics) or "off" (to force integrated graphics).
 
 On others, you may be able to the environment variable `DRI_PRIME=1` when running Zed to force the use of the discrete GPU.
 
-If you're using an AMD GPU and Zed crashes when selecting long lines, try setting the `ZED_PATH_SAMPLE_COUNT=0` environment variable. (See [#26143](https://github.com/zed-industries/zed/issues/26143))
+If you're using an AMD GPU and Zed crashes when selecting long lines, try setting the `ZED_PATH_SAMPLE_COUNT=0` environment variable. (See [#26143](https://tvv.tw/https://github.com/zed-industries/zed/issues/26143))
 
-If you're using an AMD GPU, you might get a 'Broken Pipe' error. Try using the RADV or Mesa drivers. (See [#13880](https://github.com/zed-industries/zed/issues/13880))
+If you're using an AMD GPU, you might get a 'Broken Pipe' error. Try using the RADV or Mesa drivers. (See [#13880](https://tvv.tw/https://github.com/zed-industries/zed/issues/13880))
 
-If you are using `amdvlk`, the default open-source AMD graphics driver, you may find that Zed consistently fails to launch. This is a known issue for some users, for example on Omarchy (see issue [#28851](https://github.com/zed-industries/zed/issues/28851)). To fix this, you will need to use a different driver. We recommend removing the `amdvlk` and `lib32-amdvlk` packages and installing `vulkan-radeon` instead (see issue [#14141](https://github.com/zed-industries/zed/issues/14141)).
+If you are using `amdvlk`, the default open-source AMD graphics driver, you may find that Zed consistently fails to launch. This is a known issue for some users, for example on Omarchy (see issue [#28851](https://tvv.tw/https://github.com/zed-industries/zed/issues/28851)). To fix this, you will need to use a different driver. We recommend removing the `amdvlk` and `lib32-amdvlk` packages and installing `vulkan-radeon` instead (see issue [#14141](https://tvv.tw/https://github.com/zed-industries/zed/issues/14141)).
 
 For more information, the [Arch guide to Vulkan](https://wiki.archlinux.org/title/Vulkan) has some good steps that translate well to most distributions.
 
@@ -183,11 +183,11 @@ If you are using Mesa, you can run `MESA_VK_DEVICE_SELECT=list zed --foreground`
 
 ##### Option C
 
-Using [vkdevicechooser](https://github.com/jiriks74/vkdevicechooser).
+Using [vkdevicechooser](https://tvv.tw/https://github.com/jiriks74/vkdevicechooser).
 
 #### Reporting graphics issues
 
-If Vulkan is configured correctly, and Zed is still not working for you, please [file an issue](https://github.com/zed-industries/zed) with as much information as possible.
+If Vulkan is configured correctly, and Zed is still not working for you, please [file an issue](https://tvv.tw/https://github.com/zed-industries/zed) with as much information as possible.
 
 When reporting issues where Zed fails to start due to graphics initialization errors on GitHub, it can be impossible to run the `zed: copy system specs into clipboard` command like we instruct you to in our issue template. We provide an alternative way to collect the system specs specifically for this situation.
 

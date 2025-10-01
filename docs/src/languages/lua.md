@@ -1,9 +1,9 @@
 # Lua
 
-Lua support is available through the [Lua extension](https://github.com/zed-extensions/lua).
+Lua support is available through the [Lua extension](https://tvv.tw/https://github.com/zed-extensions/lua).
 
-- Tree-sitter: [tree-sitter-grammars/tree-sitter-lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
-- Language server: [LuaLS/lua-language-server](https://github.com/LuaLS/lua-language-server)
+- Tree-sitter: [tree-sitter-grammars/tree-sitter-lua](https://tvv.tw/https://github.com/tree-sitter-grammars/tree-sitter-lua)
+- Language server: [LuaLS/lua-language-server](https://tvv.tw/https://github.com/LuaLS/lua-language-server)
 
 ## luarc.json
 
@@ -26,10 +26,10 @@ LuaLS can provide enhanced LSP autocompletion suggestions and type validation wi
 
 ### LÖVE (Love2D) {#love2d}
 
-To use [LÖVE (Love2D)](https://love2d.org/) in Zed, checkout [LuaCATS/love2d](https://github.com/LuaCATS/love2d) into a folder called `love2d-luacats` into the parent folder of your project:
+To use [LÖVE (Love2D)](https://love2d.org/) in Zed, checkout [LuaCATS/love2d](https://tvv.tw/https://github.com/LuaCATS/love2d) into a folder called `love2d-luacats` into the parent folder of your project:
 
 ```sh
-cd .. && git clone https://github.com/LuaCATS/love2d love2d-luacats
+cd .. && git clone https://tvv.tw/https://github.com/LuaCATS/love2d love2d-luacats
 ```
 
 Then in your `.luarc.json`:
@@ -47,10 +47,10 @@ Then in your `.luarc.json`:
 
 ### PlaydateSDK
 
-To use [Playdate Lua SDK](https://play.date/dev/) in Zed, checkout [playdate-luacats](https://github.com/notpeter/playdate-luacats) into the parent folder of your project:
+To use [Playdate Lua SDK](https://play.date/dev/) in Zed, checkout [playdate-luacats](https://tvv.tw/https://github.com/notpeter/playdate-luacats) into the parent folder of your project:
 
 ```sh
-cd .. && git clone https://github.com/notpeter/playdate-luacats
+cd .. && git clone https://tvv.tw/https://github.com/notpeter/playdate-luacats
 ```
 
 Then in your `.luarc.json`:
@@ -109,7 +109,7 @@ To enable [Inlay Hints](../configuring-languages.md#inlay-hints) for LuaLS in Ze
 
 ### LuaLS Formatting
 
-To enable auto-formatting with your LuaLS (provided by [CppCXY/EmmyLuaCodeStyle](https://github.com/CppCXY/EmmyLuaCodeStyle)) make sure you have `"format.enable": true,` in your .luarc.json:
+To enable auto-formatting with your LuaLS (provided by [CppCXY/EmmyLuaCodeStyle](https://tvv.tw/https://github.com/CppCXY/EmmyLuaCodeStyle)) make sure you have `"format.enable": true,` in your .luarc.json:
 
 ```json
 {
@@ -131,13 +131,13 @@ Then add the following to your Zed `settings.json`:
 }
 ```
 
-You can customize various EmmyLuaCodeStyle style options via `.editorconfig`, see [lua.template.editorconfig](https://github.com/CppCXY/EmmyLuaCodeStyle/blob/master/lua.template.editorconfig) for all available options.
+You can customize various EmmyLuaCodeStyle style options via `.editorconfig`, see [lua.template.editorconfig](https://tvv.tw/https://github.com/CppCXY/EmmyLuaCodeStyle/blob/master/lua.template.editorconfig) for all available options.
 
 ### StyLua Formatting
 
-Alternatively to use [StyLua](https://github.com/JohnnyMorganz/StyLua) for auto-formatting:
+Alternatively to use [StyLua](https://tvv.tw/https://github.com/JohnnyMorganz/StyLua) for auto-formatting:
 
-1. Install [StyLua](https://github.com/JohnnyMorganz/StyLua): `brew install stylua` or `cargo install stylua --features lua52,lua53,lua54,luau,luajit` (feel free to remove any Lua versions you don't need).
+1. Install [StyLua](https://tvv.tw/https://github.com/JohnnyMorganz/StyLua): `brew install stylua` or `cargo install stylua --features lua52,lua53,lua54,luau,luajit` (feel free to remove any Lua versions you don't need).
 2. Add the following to your `settings.json`:
 
 ```json
@@ -178,4 +178,4 @@ collapse_simple_statement = "All"
 enabled = true
 ```
 
-For a complete list of available options, see: [StyLua Options](https://github.com/JohnnyMorganz/StyLua?tab=readme-ov-file#options).
+For a complete list of available options, see: [StyLua Options](https://tvv.tw/https://github.com/JohnnyMorganz/StyLua?tab=readme-ov-file#options).

@@ -1575,7 +1575,7 @@ impl PlatformWindow for X11Window {
             decorations = crate::WindowDecorations::Server;
         }
 
-        // https://github.com/rust-windowing/winit/blob/master/src/platform_impl/linux/x11/util/hint.rs#L53-L87
+        // https://tvv.tw/https://github.com/rust-windowing/winit/blob/master/src/platform_impl/linux/x11/util/hint.rs#L53-L87
         let hints_data: [u32; 5] = match decorations {
             WindowDecorations::Server => [1 << 1, 0, 1, 0, 0],
             WindowDecorations::Client => [1 << 1, 0, 0, 0, 0],

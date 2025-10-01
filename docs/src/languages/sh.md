@@ -2,7 +2,7 @@
 
 Shell Scripts (bash, zsh, dash, sh) are supported natively by Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-bash](https://github.com/tree-sitter/tree-sitter-bash)
+- Tree-sitter: [tree-sitter/tree-sitter-bash](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-bash)
 
 ## Settings
 
@@ -19,7 +19,7 @@ You can configure various settings for Shell Scripts in your Zed User Settings (
 
 ### Formatting
 
-Zed supports auto-formatting Shell Scripts using external tools like [`shfmt`](https://github.com/mvdan/sh).
+Zed supports auto-formatting Shell Scripts using external tools like [`shfmt`](https://tvv.tw/https://github.com/mvdan/sh).
 
 1. Install `shfmt`:
 

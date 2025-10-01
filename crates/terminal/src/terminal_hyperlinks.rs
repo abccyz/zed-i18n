@@ -335,8 +335,8 @@ mod tests {
             // Cases that should be sanitized (trailing periods likely punctuation)
             ("https://example.com.", "https://example.com"),
             (
-                "https://github.com/zed-industries/zed.",
-                "https://github.com/zed-industries/zed",
+                "https://tvv.tw/https://github.com/zed-industries/zed.",
+                "https://tvv.tw/https://github.com/zed-industries/zed",
             ),
             (
                 "https://example.com/path/file.html.",
@@ -443,7 +443,7 @@ mod tests {
     // We use custom columns in many tests to workaround this issue by ensuring a wrapped
     // line never ends on a wide char:
     //
-    // <https://github.com/alacritty/alacritty/issues/8586>
+    // <https://tvv.tw/https://github.com/alacritty/alacritty/issues/8586>
     //
     // This issue was recently fixed, as soon as we update to a version containing the fix we
     // can remove all the custom columns from these tests.
@@ -604,7 +604,7 @@ mod tests {
         /// These likely rise to the level of being worth fixing.
         mod issues {
             #[test]
-            // <https://github.com/alacritty/alacritty/issues/8586>
+            // <https://tvv.tw/https://github.com/alacritty/alacritty/issues/8586>
             fn issue_alacritty_8586() {
                 // Rust paths
                 test_path!("‹«/👉例/cool.rs»›");
@@ -625,7 +625,7 @@ mod tests {
 
             #[test]
             #[should_panic(expected = "No hyperlink found")]
-            // <https://github.com/zed-industries/zed/issues/12338>
+            // <https://tvv.tw/https://github.com/zed-industries/zed/issues/12338>
             fn issue_12338() {
                 // Issue #12338
                 test_path!(".rw-r--r--     0     staff 05-27 14:03 ‹«test👉、2.txt»›");
@@ -671,7 +671,7 @@ mod tests {
                     expected = r#"Path = «test\\controllers\\template_items_controller_test.rb», line = 20, at grid cells (0, 0)..=(17, 1)"#
                 )
             )]
-            // <https://github.com/zed-industries/zed/issues/28194>
+            // <https://tvv.tw/https://github.com/zed-industries/zed/issues/28194>
             //
             // #28194 was closed, but the link includes the description part (":in" here), which
             // seems wrong...
@@ -742,7 +742,7 @@ mod tests {
             // Lots of fun to be had with long file paths (verbatim) and UNC paths on Windows.
             // See <https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation>
             // See <https://users.rust-lang.org/t/understanding-windows-paths/58583>
-            // See <https://github.com/rust-lang/cargo/issues/13919>
+            // See <https://tvv.tw/https://github.com/rust-lang/cargo/issues/13919>
 
             #[test]
             fn unc() {

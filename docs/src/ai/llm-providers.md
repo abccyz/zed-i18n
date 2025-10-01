@@ -99,7 +99,7 @@ For example, a request made within the US is kept within the AWS Regions in the 
 Although the data remains stored only in the source Region, your input prompts and output results might move outside of your source Region during cross-Region inference.
 All data will be transmitted encrypted across Amazon's secure network.
 
-We will support Cross-Region inference for each of the models on a best-effort basis, please refer to the [Cross-Region Inference method Code](https://github.com/zed-industries/zed/blob/main/crates/bedrock/src/models.rs#L297).
+We will support Cross-Region inference for each of the models on a best-effort basis, please refer to the [Cross-Region Inference method Code](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/crates/bedrock/src/models.rs#L297).
 
 For the most up-to-date supported regions and models, refer to the [Supported Models and Regions for Cross Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html).
 
@@ -209,7 +209,7 @@ You can use GitHub Copilot Chat with the Zed agent by choosing it via the model 
 
 Alternatively, you can provide an OAuth token via the `GH_COPILOT_TOKEN` environment variable.
 
-> **Note**: If you don't see specific models in the dropdown, you may need to enable them in your [GitHub Copilot settings](https://github.com/settings/copilot/features).
+> **Note**: If you don't see specific models in the dropdown, you may need to enable them in your [GitHub Copilot settings](https://tvv.tw/https://github.com/settings/copilot/features).
 
 To use Copilot Enterprise with Zed (for both agent and completions), you must configure your enterprise endpoint as described in [Configuring GitHub Copilot Enterprise](./edit-prediction.md#github-copilot-enterprise).
 
@@ -332,7 +332,7 @@ Download and install Ollama from [ollama.com/download](https://ollama.com/downlo
 Zed has pre-configured maximum context lengths (`max_tokens`) to match the capabilities of common models.
 Zed API requests to Ollama include this as the `num_ctx` parameter, but the default values do not exceed `16384` so users with ~16GB of RAM are able to use most models out of the box.
 
-See [get_max_tokens in ollama.rs](https://github.com/zed-industries/zed/blob/main/crates/ollama/src/ollama.rs) for a complete set of defaults.
+See [get_max_tokens in ollama.rs](https://tvv.tw/https://github.com/zed-industries/zed/blob/main/crates/ollama/src/ollama.rs) for a complete set of defaults.
 
 > **Note**: Token counts displayed in the Agent Panel are only estimates and will differ from the model's native tokenizer.
 

@@ -87,7 +87,7 @@ impl FromStr for TestRunner {
 ///
 /// The problem with it is that Pyright adjusts the sort text based on previous resolutions (items for which we've issued `completion/resolve` call have their sortText adjusted),
 /// which - long story short - makes completion items list non-stable. Pyright probably relies on VSCode's implementation detail.
-/// see https://github.com/microsoft/pyright/blob/95ef4e103b9b2f129c9320427e51b73ea7cf78bd/packages/pyright-internal/src/languageService/completionProvider.ts#LL2873
+/// see https://tvv.tw/https://github.com/microsoft/pyright/blob/95ef4e103b9b2f129c9320427e51b73ea7cf78bd/packages/pyright-internal/src/languageService/completionProvider.ts#LL2873
 fn process_pyright_completions(items: &mut [lsp::CompletionItem]) {
     for item in items {
         item.sort_text.take();

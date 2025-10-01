@@ -116,7 +116,7 @@ mod zed_ext {
     ///
     /// On macOS and Linux this is a no-op.
     ///
-    /// This is a workaround for https://github.com/bytecodealliance/wasmtime/issues/10415.
+    /// This is a workaround for https://tvv.tw/https://github.com/bytecodealliance/wasmtime/issues/10415.
     pub fn sanitize_windows_path(path: std::path::PathBuf) -> std::path::PathBuf {
         use zed_extension_api::{Os, current_platform};
 

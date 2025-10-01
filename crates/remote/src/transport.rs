@@ -203,7 +203,7 @@ async fn build_remote_server_from_source(
             "install",
             "cross",
             "--git",
-            "https://github.com/cross-rs/cross",
+            "https://tvv.tw/https://github.com/cross-rs/cross",
         ]))
         .await?;
 

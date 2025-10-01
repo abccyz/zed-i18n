@@ -328,7 +328,7 @@ impl Display for TerminalError {
     }
 }
 
-// https://github.com/alacritty/alacritty/blob/cb3a79dbf6472740daca8440d5166c1d4af5029e/extra/man/alacritty.5.scd?plain=1#L207-L213
+// https://tvv.tw/https://github.com/alacritty/alacritty/blob/cb3a79dbf6472740daca8440d5166c1d4af5029e/extra/man/alacritty.5.scd?plain=1#L207-L213
 const DEFAULT_SCROLL_HISTORY_LINES: usize = 10_000;
 pub const MAX_SCROLL_HISTORY_LINES: usize = 100_000;
 
@@ -2131,7 +2131,7 @@ pub fn get_color_at_index(index: usize, theme: &Theme) -> Hsla {
         14 => colors.terminal_ansi_bright_cyan,
         15 => colors.terminal_ansi_bright_white,
         // 16-231 are a 6x6x6 RGB color cube, mapped to 0-255 using steps defined by XTerm.
-        // See: https://github.com/xterm-x11/xterm-snapshots/blob/master/256colres.pl
+        // See: https://tvv.tw/https://github.com/xterm-x11/xterm-snapshots/blob/master/256colres.pl
         16..=231 => {
             let (r, g, b) = rgb_for_index(index as u8);
             rgba_color(
@@ -2147,7 +2147,7 @@ pub fn get_color_at_index(index: usize, theme: &Theme) -> Hsla {
             rgba_color(value, value, value)
         }
         // For compatibility with the alacritty::Colors interface
-        // See: https://github.com/alacritty/alacritty/blob/master/alacritty_terminal/src/term/color.rs
+        // See: https://tvv.tw/https://github.com/alacritty/alacritty/blob/master/alacritty_terminal/src/term/color.rs
         256 => colors.terminal_foreground,
         257 => colors.terminal_background,
         258 => theme.players().local().cursor,

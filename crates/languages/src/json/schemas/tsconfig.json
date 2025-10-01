@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "$comment": "Note that this schema uses 'null' in various places. The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058)",
+  "$comment": "Note that this schema uses 'null' in various places. The value of 'null' is UNDOCUMENTED (https://tvv.tw/https://github.com/microsoft/TypeScript/pull/18058)",
   "allowTrailingCommas": true,
   "allOf": [
     {
@@ -45,7 +45,7 @@
     "//": {
       "explainer": "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#overview",
       "reference": "https://www.typescriptlang.org/tsconfig",
-      "reference metadata": "https://github.com/microsoft/TypeScript-Website/blob/v2/packages/tsconfig-reference/scripts/tsconfigRules.ts"
+      "reference metadata": "https://tvv.tw/https://github.com/microsoft/TypeScript-Website/blob/v2/packages/tsconfig-reference/scripts/tsconfigRules.ts"
     },
     "filesDefinition": {
       "properties": {
@@ -1252,7 +1252,7 @@
               "type": ["boolean", "null"]
             },
             "experimentalResolver": {
-              "description": "Enable experimental features that re-map imports and require calls to support:\n`baseUrl`, `paths`, `rootDirs`, `.js` to `.ts` file extension mappings,\n`outDir` to `rootDir` mappings for composite projects and monorepos.\n\nFor details, see https://github.com/TypeStrong/ts-node/issues/1514",
+              "description": "Enable experimental features that re-map imports and require calls to support:\n`baseUrl`, `paths`, `rootDirs`, `.js` to `.ts` file extension mappings,\n`outDir` to `rootDir` mappings for composite projects and monorepos.\n\nFor details, see https://tvv.tw/https://github.com/TypeStrong/ts-node/issues/1514",
               "type": ["boolean", "null"]
             },
             "experimentalSpecifierResolution": {

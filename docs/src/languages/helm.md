@@ -1,9 +1,9 @@
 # Helm
 
-Support for Helm in Zed is provided by the community-maintained [Helm extension](https://github.com/cabrinha/helm.zed).
+Support for Helm in Zed is provided by the community-maintained [Helm extension](https://tvv.tw/https://github.com/cabrinha/helm.zed).
 
-- Tree-sitter: [tree-sitter-go-template](https://github.com/ngalaiko/tree-sitter-go-template/tree/master)
-- Language Server: [mrjosh/helm-ls](https://github.com/mrjosh/helm-ls)
+- Tree-sitter: [tree-sitter-go-template](https://tvv.tw/https://github.com/ngalaiko/tree-sitter-go-template/tree/master)
+- Language Server: [mrjosh/helm-ls](https://tvv.tw/https://github.com/mrjosh/helm-ls)
 
 ## Setup
 

@@ -4,7 +4,7 @@ These are some notes of how to extract an extension from the main zed repository
 
 ## Pre-requisites
 
-Install [git-filter-repo](https://github.com/newren/git-filter-repo/blob/main/INSTALL.md):
+Install [git-filter-repo](https://tvv.tw/https://github.com/newren/git-filter-repo/blob/main/INSTALL.md):
 
 ```
 brew install git-filter-repo
@@ -33,7 +33,7 @@ cd $LANGNAME
 This file takes the form of `patern==>replacement`, where the replacement is optional.
 Note whitespace matters so `ruby: ==>` is removing the `ruby:` prefix from a commit messages and adding a space after `==> ` means the replacement begins with a space. Regex capture groups are numbered `\1`, `\2`, etc.
 
-See: [Git Filter Repo Docs](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html) for more.
+See: [Git Filter Repo Docs](https://htmlpreview.github.io/?https://tvv.tw/https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html) for more.
 
 ```sh
 # Create regex mapping for rewriting commit messages (edit as appropriate)
@@ -89,7 +89,7 @@ Usually the initial extraction didn't mention a version number so you can just d
 
 5. Push to the new repo
 
-Create a new empty repo on github under the [zed-extensions](https://github.com/organizations/zed-extensions/repositories/new) organization.
+Create a new empty repo on github under the [zed-extensions](https://tvv.tw/https://github.com/organizations/zed-extensions/repositories/new) organization.
 
 ```
 git remote add origin git@github.com:zed-extensions/$LANGNAME
@@ -112,7 +112,7 @@ OLD_VERSION=$(grep '^version = ' extension.toml | cut -d'"' -f2)
 NEW_VERSION=$(echo "$OLD_VERSION" | awk -F. '{$NF = $NF + 1;} 1' OFS=.)
 echo $OLD_VERSION $NEW_VERSION
 perl -i -pe "s/$OLD_VERSION/$NEW_VERSION/" extension.toml
-perl -i -pe "s#https://github.com/zed-industries/zed#https://github.com/zed-extensions/${LANGNAME}#g" extension.toml
+perl -i -pe "s#https://tvv.tw/https://github.com/zed-industries/zed#https://tvv.tw/https://github.com/zed-extensions/${LANGNAME}#g" extension.toml
 
 # if there's rust code, update this too.
 test -f Cargo.toml && perl -i -pe "s/$OLD_VERSION/$NEW_VERSION/" Cargo.toml
@@ -164,7 +164,7 @@ git submodule update
 git status
 
 git checkout -b ${LANGNAME}_v${NEW_VERSION}
-git submodule add https://github.com/zed-extensions/${LANGNAME}.git extensions/${LANGNAME}
+git submodule add https://tvv.tw/https://github.com/zed-extensions/${LANGNAME}.git extensions/${LANGNAME}
 pnpm sort-extensions
 
 # edit extensions.toml:

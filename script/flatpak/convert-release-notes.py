@@ -82,7 +82,7 @@ if __name__ == "__main__":
     release_info_str += f"    <description>\n"
     release_info_str += textwrap.indent(body, " " * 8)
     release_info_str += f"    </description>\n"
-    release_info_str += f"    <url>https://github.com/zed-industries/zed/releases/tag/{tag}</url>\n"
+    release_info_str += f"    <url>https://tvv.tw/https://github.com/zed-industries/zed/releases/tag/{tag}</url>\n"
     release_info_str += "</release>\n"
 
     channel_releases_file = f"../../crates/zed/resources/flatpak/release-info/{channel}"

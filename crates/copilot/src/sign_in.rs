@@ -10,7 +10,7 @@ use util::ResultExt as _;
 use workspace::notifications::NotificationId;
 use workspace::{ModalView, Toast, Workspace};
 
-const COPILOT_SIGN_UP_URL: &str = "https://github.com/features/copilot";
+const COPILOT_SIGN_UP_URL: &str = "https://tvv.tw/https://github.com/features/copilot";
 
 struct CopilotStatusToast;
 

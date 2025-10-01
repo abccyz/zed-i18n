@@ -487,7 +487,7 @@ impl Fs for RealFs {
         if let Ok(Some(metadata)) = self.metadata(path).await
             && metadata.is_symlink
         {
-            // TODO: trash_file does not support trashing symlinks yet - https://github.com/bilelmoussaoui/ashpd/issues/255
+            // TODO: trash_file does not support trashing symlinks yet - https://tvv.tw/https://github.com/bilelmoussaoui/ashpd/issues/255
             return self.remove_file(path, RemoveOptions::default()).await;
         }
         let file = smol::fs::File::open(path).await?;
@@ -571,7 +571,7 @@ impl Fs for RealFs {
         smol::unblock(move || {
             // Use the directory of the destination as temp dir to avoid
             // invalid cross-device link error, and XDG_CACHE_DIR for fallback.
-            // See https://github.com/zed-industries/zed/pull/8437 for more details.
+            // See https://tvv.tw/https://github.com/zed-industries/zed/pull/8437 for more details.
             let mut tmp_file =
                 tempfile::NamedTempFile::new_in(path.parent().unwrap_or(paths::temp_dir()))?;
             tmp_file.write_all(data.as_bytes())?;
@@ -597,7 +597,7 @@ impl Fs for RealFs {
             // https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew#remarks
             //
             // So we use the directory of the destination as a temp dir to avoid it.
-            // https://github.com/zed-industries/zed/issues/16571
+            // https://tvv.tw/https://github.com/zed-industries/zed/issues/16571
             let temp_dir = TempDir::new_in(path.parent().unwrap_or(paths::temp_dir()))?;
             let temp_file = {
                 let temp_file_path = temp_dir.path().join("temp_file");
@@ -2616,7 +2616,7 @@ fn read_recursive<'a>(
 
 // todo(windows)
 // can we get file id not open the file twice?
-// https://github.com/rust-lang/rust/issues/63010
+// https://tvv.tw/https://github.com/rust-lang/rust/issues/63010
 #[cfg(target_os = "windows")]
 async fn file_id(path: impl AsRef<Path>) -> Result<u64> {
     use std::os::windows::io::AsRawHandle;
@@ -3094,7 +3094,7 @@ mod tests {
     #[gpui::test]
     async fn test_realfs_atomic_write(executor: BackgroundExecutor) {
         // With the file handle still open, the file should be replaced
-        // https://github.com/zed-industries/zed/issues/30054
+        // https://tvv.tw/https://github.com/zed-industries/zed/issues/30054
         let fs = RealFs {
             git_binary_path: None,
             executor,

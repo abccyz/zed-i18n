@@ -11,7 +11,7 @@
 ; Maintained by Zhenghan Yang
 ; Email: 847320916@QQ.com
 ; Translation based on network resource
-; The latest Translation is on https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation
+; The latest Translation is on https://tvv.tw/https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation
 ;
 
 [LangOptions]
@@ -96,7 +96,7 @@ AboutSetupMenuItem=关于安装程序(&A)...
 AboutSetupTitle=关于安装程序
 AboutSetupMessage=%1 版本 %2%n%3%n%n%1 主页：%n%4
 AboutSetupNote=
-TranslatorNote=简体中文翻译由Kira(847320916@qq.com)维护。项目地址：https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation
+TranslatorNote=简体中文翻译由Kira(847320916@qq.com)维护。项目地址：https://tvv.tw/https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation
 
 ; *** 按钮
 ButtonBack=< 上一步(&B)

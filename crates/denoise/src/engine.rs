@@ -27,7 +27,7 @@ pub struct Engine {
     out_buffer: [f32; BLOCK_LEN],
 }
 
-// 32 ms @ 16khz per DTLN docs: https://github.com/breizhn/DTLN
+// 32 ms @ 16khz per DTLN docs: https://tvv.tw/https://github.com/breizhn/DTLN
 pub const BLOCK_LEN: usize = 512;
 // 8 ms @ 16khz per DTLN docs.
 pub const BLOCK_SHIFT: usize = 128;

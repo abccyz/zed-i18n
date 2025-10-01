@@ -3949,7 +3949,10 @@ impl EditorElement {
                                         h_flex()
                                             .id("jump-to-file-button")
                                             .gap_2p5()
-                                            .child(Label::new("Jump To File"))
+                                            .child(Label::new(localization::shared(
+                                                "command.jump_to_file",
+                                                "Jump To File",
+                                            )))
                                             .children(
                                                 KeyBinding::for_action_in(
                                                     &OpenExcerpts,

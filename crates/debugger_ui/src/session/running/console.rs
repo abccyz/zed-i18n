@@ -930,7 +930,7 @@ fn color_fetcher(color: ansi::Color) -> fn(&Theme) -> Hsla {
                 14 => |theme| theme.colors().terminal_ansi_bright_cyan,
                 15 => |theme| theme.colors().terminal_ansi_bright_white,
                 // 16-231 are a 6x6x6 RGB color cube, mapped to 0-255 using steps defined by XTerm.
-                // See: https://github.com/xterm-x11/xterm-snapshots/blob/master/256colres.pl
+                // See: https://tvv.tw/https://github.com/xterm-x11/xterm-snapshots/blob/master/256colres.pl
                 // 16..=231 => {
                 //     let (r, g, b) = rgb_for_index(index as u8);
                 //     rgba_color(
@@ -946,7 +946,7 @@ fn color_fetcher(color: ansi::Color) -> fn(&Theme) -> Hsla {
                 //     rgba_color(value, value, value)
                 // }
                 // For compatibility with the alacritty::Colors interface
-                // See: https://github.com/alacritty/alacritty/blob/master/alacritty_terminal/src/term/color.rs
+                // See: https://tvv.tw/https://github.com/alacritty/alacritty/blob/master/alacritty_terminal/src/term/color.rs
                 _ => |_| gpui::black(),
             }
         }

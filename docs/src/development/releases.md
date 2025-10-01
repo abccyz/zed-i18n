@@ -30,7 +30,7 @@ Credentials for various services used in this process can be found in 1Password.
    - Use a prior release for the initial outline.
    - Make sure to append the `Credit` line, if present, to the end of the release note line.
 
-1. Once release drafts are up on [GitHub Releases](https://github.com/zed-industries/zed/releases), paste both preview and stable release notes into each and **save**.
+1. Once release drafts are up on [GitHub Releases](https://tvv.tw/https://github.com/zed-industries/zed/releases), paste both preview and stable release notes into each and **save**.
 
    - **Do not publish the drafts, yet.**
 
@@ -74,10 +74,10 @@ You will need write access to the Zed repository to do this:
 1. After the commit is cherry-picked, run `./script/trigger-release {preview|stable}`.
    This will bump the version numbers, create a new release tag, and kick off a release build.
 
-   - This can also be run from the [GitHub Actions UI](https://github.com/zed-industries/zed/actions/workflows/bump_patch_version.yml):
-     ![](https://github.com/zed-industries/zed/assets/1486634/9e31ae95-09e1-4c7f-9591-944f4f5b63ea)
+   - This can also be run from the [GitHub Actions UI](https://tvv.tw/https://github.com/zed-industries/zed/actions/workflows/bump_patch_version.yml):
+     ![](https://tvv.tw/https://github.com/zed-industries/zed/assets/1486634/9e31ae95-09e1-4c7f-9591-944f4f5b63ea)
 
-1. Once release drafts are up on [GitHub Releases](https://github.com/zed-industries/zed/releases), proofread and edit the release notes as needed and **save**.
+1. Once release drafts are up on [GitHub Releases](https://tvv.tw/https://github.com/zed-industries/zed/releases), proofread and edit the release notes as needed and **save**.
 
    - **Do not publish the drafts, yet.**
 

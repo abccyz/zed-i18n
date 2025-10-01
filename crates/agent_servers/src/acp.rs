@@ -389,7 +389,7 @@ impl AgentConnection for AcpConnection {
                     };
 
                     // Temporary workaround until the following PR is generally available:
-                    // https://github.com/google-gemini/gemini-cli/pull/6656
+                    // https://tvv.tw/https://github.com/google-gemini/gemini-cli/pull/6656
 
                     #[derive(Deserialize)]
                     #[serde(deny_unknown_fields)]

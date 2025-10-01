@@ -2,12 +2,12 @@
 
 Zed supports terminal-based agents through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com).
 
-Currently, [Gemini CLI](https://github.com/google-gemini/gemini-cli) serves as the reference implementation.
+Currently, [Gemini CLI](https://tvv.tw/https://github.com/google-gemini/gemini-cli) serves as the reference implementation.
 [Claude Code](https://www.anthropic.com/claude-code) is also included by default, and you can [add custom ACP-compatible agents](#add-custom-agents) as well.
 
 ## Gemini CLI {#gemini-cli}
 
-Zed provides the ability to run [Gemini CLI](https://github.com/google-gemini/gemini-cli) directly in the [agent panel](./agent-panel.md).
+Zed provides the ability to run [Gemini CLI](https://tvv.tw/https://github.com/google-gemini/gemini-cli) directly in the [agent panel](./agent-panel.md).
 
 Under the hood we run Gemini CLI in the background, and talk to it over ACP.
 This means that you're running the real Gemini CLI, with all of the advantages of that, but you can see and interact with files in your editor.
@@ -30,7 +30,7 @@ If you'd like to bind this to a keyboard shortcut, you can do so by editing your
 
 #### Installation
 
-The first time you create a Gemini CLI thread, Zed will install [@google/gemini-cli](https://github.com/zed-industries/claude-code-acp). This installation is only available to Zed and is kept up to date as you use the agent.
+The first time you create a Gemini CLI thread, Zed will install [@google/gemini-cli](https://tvv.tw/https://github.com/zed-industries/claude-code-acp). This installation is only available to Zed and is kept up to date as you use the agent.
 
 By default, Zed will use this managed version of Gemini CLI even if you have it installed globally. However, you can configure it to use a version in your `PATH` by adding this to your settings:
 
@@ -54,7 +54,7 @@ You can also use the "Gemini API Key". If you select this, and have the `GEMINI_
 
 The "Vertex AI" option is for those who are using [Vertex AI](https://cloud.google.com/vertex-ai), and have already configured their environment correctly.
 
-For more information, see the [Gemini CLI docs](https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md).
+For more information, see the [Gemini CLI docs](https://tvv.tw/https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md).
 
 ### Usage
 
@@ -67,7 +67,7 @@ And to give it context, you can @-mention files, recent threads, symbols, or fet
 ## Claude Code
 
 Similar to Gemini CLI, you can also run [Claude Code](https://www.anthropic.com/claude-code) directly via Zed's [agent panel](./agent-panel.md).
-Under the hood, Zed runs Claude Code and communicate to it over ACP, through [a dedicated adapter](https://github.com/zed-industries/claude-code-acp).
+Under the hood, Zed runs Claude Code and communicate to it over ACP, through [a dedicated adapter](https://tvv.tw/https://github.com/zed-industries/claude-code-acp).
 
 ### Getting Started
 
@@ -93,7 +93,7 @@ To ensure you're using your billing method of choice, [open a new Claude Code th
 
 #### Installation
 
-The first time you create a Claude Code thread, Zed will install [@zed-industries/claude-code-acp](https://github.com/zed-industries/claude-code-acp). This installation is only available to Zed and is kept up to date as you use the agent.
+The first time you create a Claude Code thread, Zed will install [@zed-industries/claude-code-acp](https://tvv.tw/https://github.com/zed-industries/claude-code-acp). This installation is only available to Zed and is kept up to date as you use the agent.
 
 Zed will always use this managed version of Claude Code even if you have it installed globally.
 

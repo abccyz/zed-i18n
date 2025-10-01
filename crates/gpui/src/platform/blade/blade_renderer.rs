@@ -364,7 +364,7 @@ impl BladeRenderer {
             name: "main",
             buffer_count: 2,
         });
-        // workaround for https://github.com/zed-industries/zed/issues/26143
+        // workaround for https://tvv.tw/https://github.com/zed-industries/zed/issues/26143
         let path_sample_count = std::env::var("ZED_PATH_SAMPLE_COUNT")
             .ok()
             .and_then(|v| v.parse().ok())
@@ -444,7 +444,7 @@ impl BladeRenderer {
                     "there's a known bug with amdgpu/radv, try setting ZED_PATH_SAMPLE_COUNT=0 as a workaround"
                 );
                 log::error!(
-                    "if that helps you're running into https://github.com/zed-industries/zed/issues/26143"
+                    "if that helps you're running into https://tvv.tw/https://github.com/zed-industries/zed/issues/26143"
                 );
             }
             log::error!(

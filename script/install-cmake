@@ -11,7 +11,7 @@
 # use the official CMake installer script from KitWare.
 #
 # Note this is similar to how GitHub Actions runners install cmake:
-# https://github.com/actions/runner-images/blob/main/images/ubuntu/scripts/build/install-cmake.sh
+# https://tvv.tw/https://github.com/actions/runner-images/blob/main/images/ubuntu/scripts/build/install-cmake.sh
 #
 # Upstream:  3.30.4 (2024-09-27)
 
@@ -60,7 +60,7 @@ else
   fi
   tempdir=$(mktemp -d)
   pushd "$tempdir"
-    CMAKE_REPO="https://github.com/Kitware/CMake"
+    CMAKE_REPO="https://tvv.tw/https://github.com/Kitware/CMake"
     CMAKE_INSTALLER="cmake-$CMAKE_VERSION-linux-$arch.sh"
     curl -fsSL --output cmake-$CMAKE_VERSION-SHA-256.txt \
       "$CMAKE_REPO/releases/download/v$CMAKE_VERSION/cmake-$CMAKE_VERSION-SHA-256.txt"

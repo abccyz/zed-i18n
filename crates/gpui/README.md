@@ -8,7 +8,7 @@ for Rust, designed to support a wide variety of applications.
 GPUI is still in active development as we work on the Zed code editor and isn't yet on crates.io. You'll also need to use the latest version of stable Rust and be on macOS or Linux. Add the following to your `Cargo.toml`:
 
 ```toml
-gpui = { git = "https://github.com/zed-industries/zed" }
+gpui = { git = "https://tvv.tw/https://github.com/zed-industries/zed" }
 ```
 
 Everything in GPUI starts with an `Application`. You can create one with `Application::new()`, and kick off your application by passing a callback to `Application::run()`. Inside this callback, you can create a new window with `App::open_window()`, and register your first root view. See [gpui.rs](https://www.gpui.rs/) for a complete example.

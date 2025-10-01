@@ -27,7 +27,7 @@ In any case, here are some of the ones available:
 - [Puppeteer](https://zed.dev/extensions/puppeteer-mcp-server)
 - [Gem](https://zed.dev/extensions/gem)
 - [Brave Search](https://zed.dev/extensions/brave-search-mcp-server)
-- [Prisma](https://github.com/aqrln/prisma-mcp-zed)
+- [Prisma](https://tvv.tw/https://github.com/aqrln/prisma-mcp-zed)
 - [Framelink Figma](https://zed.dev/extensions/framelink-figma-mcp-server)
 - [Linear](https://zed.dev/extensions/linear-mcp-server)
 - [Resend](https://zed.dev/extensions/resend-mcp-server)

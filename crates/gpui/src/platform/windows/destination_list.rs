@@ -60,7 +60,7 @@ impl DockMenuItem {
 }
 
 // This code is based on the example from Microsoft:
-// https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/Win7Samples/winui/shell/appshellintegration/RecipePropertyHandler/RecipePropertyHandler.cpp
+// https://tvv.tw/https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/Win7Samples/winui/shell/appshellintegration/RecipePropertyHandler/RecipePropertyHandler.cpp
 pub(crate) fn update_jump_list(
     jump_list: &JumpList,
 ) -> anyhow::Result<Vec<SmallVec<[PathBuf; 2]>>> {
@@ -72,7 +72,7 @@ pub(crate) fn update_jump_list(
 }
 
 // Copied from:
-// https://github.com/microsoft/windows-rs/blob/0fc3c2e5a13d4316d242bdeb0a52af611eba8bd4/crates/libs/windows/src/Windows/Win32/Storage/EnhancedStorage/mod.rs#L1881
+// https://tvv.tw/https://github.com/microsoft/windows-rs/blob/0fc3c2e5a13d4316d242bdeb0a52af611eba8bd4/crates/libs/windows/src/Windows/Win32/Storage/EnhancedStorage/mod.rs#L1881
 const PKEY_TITLE: PROPERTYKEY = PROPERTYKEY {
     fmtid: GUID::from_u128(0xf29f85e0_4ff9_1068_ab91_08002b27b3d9),
     pid: 2,
@@ -151,7 +151,7 @@ fn add_recent_folders(
                     .join("\n"),
             );
             // simulate folder icon
-            // https://github.com/microsoft/vscode/blob/7a5dc239516a8953105da34f84bae152421a8886/src/vs/platform/workspaces/electron-main/workspacesHistoryMainService.ts#L380
+            // https://tvv.tw/https://github.com/microsoft/vscode/blob/7a5dc239516a8953105da34f84bae152421a8886/src/vs/platform/workspaces/electron-main/workspacesHistoryMainService.ts#L380
             let icon = HSTRING::from("explorer.exe");
 
             let display = folder_path

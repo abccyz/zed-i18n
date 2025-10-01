@@ -1,12 +1,12 @@
 # SQL
 
-SQL files are handled by the [SQL Extension](https://github.com/zed-extensions/sql).
+SQL files are handled by the [SQL Extension](https://tvv.tw/https://github.com/zed-extensions/sql).
 
-- Tree-sitter: [nervenes/tree-sitter-sql](https://github.com/nervenes/tree-sitter-sql)
+- Tree-sitter: [nervenes/tree-sitter-sql](https://tvv.tw/https://github.com/nervenes/tree-sitter-sql)
 
 ### Formatting
 
-Zed supports auto-formatting SQL using external tools like [`sql-formatter`](https://github.com/sql-formatter-org/sql-formatter).
+Zed supports auto-formatting SQL using external tools like [`sql-formatter`](https://tvv.tw/https://github.com/sql-formatter-org/sql-formatter).
 
 1. Install `sql-formatter`:
 
@@ -42,7 +42,7 @@ You can add this to Zed project settings (`.zed/settings.json`) or via your Zed 
 
 ### Advanced Formatting
 
-Sql-formatter also allows more precise control by providing [sql-formatter configuration options](https://github.com/sql-formatter-org/sql-formatter#configuration-options). To provide these, create a `.sql-formatter.json` file in your project:
+Sql-formatter also allows more precise control by providing [sql-formatter configuration options](https://tvv.tw/https://github.com/sql-formatter-org/sql-formatter#configuration-options). To provide these, create a `.sql-formatter.json` file in your project:
 
 ```json
 {

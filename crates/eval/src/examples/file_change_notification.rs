@@ -11,7 +11,7 @@ impl Example for FileChangeNotificationExample {
     fn meta(&self) -> ExampleMetadata {
         ExampleMetadata {
             name: "file_change_notification".to_string(),
-            url: "https://github.com/octocat/hello-world".to_string(),
+            url: "https://tvv.tw/https://github.com/octocat/hello-world".to_string(),
             revision: "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d".to_string(),
             language_server: None,
             max_assertions: None,

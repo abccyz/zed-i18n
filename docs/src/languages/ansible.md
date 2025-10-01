@@ -1,9 +1,9 @@
 # Ansible
 
-Support for Ansible in Zed is provided via a community-maintained [Ansible extension](https://github.com/kartikvashistha/zed-ansible).
+Support for Ansible in Zed is provided via a community-maintained [Ansible extension](https://tvv.tw/https://github.com/kartikvashistha/zed-ansible).
 
-- Tree-sitter: [zed-industries/tree-sitter-yaml](https://github.com/zed-industries/tree-sitter-yaml)
-- Language Server: [ansible/vscode-ansible](https://github.com/ansible/vscode-ansible/tree/main/packages/ansible-language-server)
+- Tree-sitter: [zed-industries/tree-sitter-yaml](https://tvv.tw/https://github.com/zed-industries/tree-sitter-yaml)
+- Language Server: [ansible/vscode-ansible](https://tvv.tw/https://github.com/ansible/vscode-ansible/tree/main/packages/ansible-language-server)
 
 ## Setup
 
@@ -69,7 +69,7 @@ If your inventory file is in the YAML format, you can either:
 
 ### LSP Configuration
 
-By default, the following default config is passed to the Ansible language server. It conveniently mirrors the defaults set by [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/03bc581e05e81d33808b42b2d7e76d70adb3b595/lua/lspconfig/configs/ansiblels.lua) for the Ansible language server:
+By default, the following default config is passed to the Ansible language server. It conveniently mirrors the defaults set by [nvim-lspconfig](https://tvv.tw/https://github.com/neovim/nvim-lspconfig/blob/03bc581e05e81d33808b42b2d7e76d70adb3b595/lua/lspconfig/configs/ansiblels.lua) for the Ansible language server:
 
 ```json
 {
@@ -126,5 +126,5 @@ When desired, any of the above default settings can be overridden under the `"ls
 }
 ```
 
-A full list of options/settings, that can be passed to the server, can be found at the project's page [here](https://github.com/ansible/vscode-ansible/blob/5a89836d66d470fb9d20e7ea8aa2af96f12f61fb/docs/als/settings.md).
+A full list of options/settings, that can be passed to the server, can be found at the project's page [here](https://tvv.tw/https://github.com/ansible/vscode-ansible/blob/5a89836d66d470fb9d20e7ea8aa2af96f12f61fb/docs/als/settings.md).
 Feel free to modify option values as needed.

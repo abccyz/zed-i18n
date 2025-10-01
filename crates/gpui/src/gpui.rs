@@ -10,7 +10,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! gpui = { git = "https://github.com/zed-industries/zed" }
+//! gpui = { git = "https://tvv.tw/https://github.com/zed-industries/zed" }
 //! ```
 //!
 //! Everything in GPUI starts with an [`Application`]. You can create one with [`Application::new`], and

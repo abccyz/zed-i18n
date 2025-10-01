@@ -3438,7 +3438,10 @@ async fn test_git_blame_is_forwarded(cx_a: &mut TestAppContext, cx_b: &mut TestA
                 assert_eq!(details.message, format!("message for idx-{}", idx));
                 assert_eq!(
                     details.permalink.unwrap().to_string(),
-                    format!("https://github.com/zed-industries/zed/commit/{}", entry.sha)
+                    format!(
+                        "https://tvv.tw/https://github.com/zed-industries/zed/commit/{}",
+                        entry.sha
+                    )
                 );
             }
         });

@@ -7,7 +7,7 @@ import { IncomingWebhook } from "@slack/webhook";
  * [Slack Docs](https://api.slack.com/reference/block-kit/blocks#section)
  */
 const SECTION_BLOCK_TEXT_LIMIT = 3000;
-const GITHUB_ISSUES_URL = "https://github.com/zed-industries/zed/issues";
+const GITHUB_ISSUES_URL = "https://tvv.tw/https://github.com/zed-industries/zed/issues";
 
 async function main() {
   const octokit = new Octokit({

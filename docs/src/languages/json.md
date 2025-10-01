@@ -2,8 +2,8 @@
 
 JSON support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-json](https://github.com/tree-sitter/tree-sitter-json)
-- Language Server: [zed-industries/json-language-server](https://github.com/zed-industries/json-language-server)
+- Tree-sitter: [tree-sitter/tree-sitter-json](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-json)
+- Language Server: [zed-industries/json-language-server](https://tvv.tw/https://github.com/zed-industries/json-language-server)
 
 ## JSONC
 
@@ -12,7 +12,7 @@ While editing these files you can use `cmd-/` (macOS) or `ctrl-/` (Linux) to tog
 
 ## JSONC Prettier Formatting
 
-If you use files with the `*.jsonc` extension when using `Format Document` or have `format_on_save` enabled, Zed invokes Prettier as the formatter. Prettier has an [outstanding issue](https://github.com/prettier/prettier/issues/15956) where it will add trailing commas to files with a `jsonc` extension. JSONC files which have a `.json` extension are unaffected.
+If you use files with the `*.jsonc` extension when using `Format Document` or have `format_on_save` enabled, Zed invokes Prettier as the formatter. Prettier has an [outstanding issue](https://tvv.tw/https://github.com/prettier/prettier/issues/15956) where it will add trailing commas to files with a `jsonc` extension. JSONC files which have a `.json` extension are unaffected.
 
 To workaround this behavior you can add the following to your `.prettierrc` configuration file:
 
@@ -38,7 +38,7 @@ Zed automatically out of the box supports JSON Schema validation of `package.jso
 
 To specify a schema inline with your JSON files, add a `$schema` top level key linking to your json schema file.
 
-For example to for a `.luarc.json` for use with [lua-language-server](https://github.com/LuaLS/lua-language-server/):
+For example to for a `.luarc.json` for use with [lua-language-server](https://tvv.tw/https://github.com/LuaLS/lua-language-server/):
 
 ```json
 {
@@ -70,7 +70,7 @@ To
 }
 ```
 
-You can also pass any of the [supported settings](https://github.com/Microsoft/vscode/blob/main/extensions/json-language-features/server/README.md#settings) to json-language-server by specifying them in your Zed settings.json:
+You can also pass any of the [supported settings](https://tvv.tw/https://github.com/Microsoft/vscode/blob/main/extensions/json-language-features/server/README.md#settings) to json-language-server by specifying them in your Zed settings.json:
 
 <!--
 TBD: Add formatter (prettier) settings (autoformat, tab_size, etc)

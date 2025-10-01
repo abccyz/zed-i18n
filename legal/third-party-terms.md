@@ -25,7 +25,7 @@ In addition to the [Zed End User Terms](/terms) and [Zed Privacy Policy](/privac
 - [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 - [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 - [GitHub Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
-- [GitHub Copilot Product Specific Terms](https://github.com/customer-terms/github-copilot-product-specific-terms)
+- [GitHub Copilot Product Specific Terms](https://tvv.tw/https://github.com/customer-terms/github-copilot-product-specific-terms)
 
 ## Google
 

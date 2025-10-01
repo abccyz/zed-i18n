@@ -37,7 +37,7 @@ use crate::PackageJsonData;
 const SERVER_PATH: &str =
     "node_modules/vscode-langservers-extracted/bin/vscode-json-language-server";
 
-// Origin: https://github.com/SchemaStore/schemastore
+// Origin: https://tvv.tw/https://github.com/SchemaStore/schemastore
 const TSCONFIG_SCHEMA: &str = include_str!("json/schemas/tsconfig.json");
 const PACKAGE_JSON_SCHEMA: &str = include_str!("json/schemas/package.json");
 

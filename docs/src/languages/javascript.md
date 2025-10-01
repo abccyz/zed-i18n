@@ -2,9 +2,9 @@
 
 JavaScript support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-javascript](https://github.com/tree-sitter/tree-sitter-javascript)
-- Language Server: [typescript-language-server/typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
-- Debug Adapter: [vscode-js-debug](https://github.com/microsoft/vscode-js-debug)
+- Tree-sitter: [tree-sitter/tree-sitter-javascript](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-javascript)
+- Language Server: [typescript-language-server/typescript-language-server](https://tvv.tw/https://github.com/typescript-language-server/typescript-language-server)
+- Debug Adapter: [vscode-js-debug](https://tvv.tw/https://github.com/microsoft/vscode-js-debug)
 
 ## Code formatting
 
@@ -39,7 +39,7 @@ In JSX strings, the [`tailwindcss-language-server`](./tailwindcss.md) is used pr
 ## JSDoc
 
 Zed supports JSDoc syntax in JavaScript and TypeScript comments that match the JSDoc syntax.
-Zed uses [tree-sitter/tree-sitter-jsdoc](https://github.com/tree-sitter/tree-sitter-jsdoc) for parsing and highlighting JSDoc.
+Zed uses [tree-sitter/tree-sitter-jsdoc](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-jsdoc) for parsing and highlighting JSDoc.
 
 ## ESLint
 

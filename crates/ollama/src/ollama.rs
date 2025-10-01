@@ -145,7 +145,7 @@ impl ChatRequest {
     }
 }
 
-// https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values
+// https://tvv.tw/https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values
 #[derive(Serialize, Default, Debug)]
 pub struct ChatOptions {
     pub num_ctx: Option<u64>,

@@ -501,7 +501,7 @@ impl LspCommand for GoToParentModule {
 }
 
 // https://rust-analyzer.github.io/book/contributing/lsp-extensions.html#runnables
-// Taken from https://github.com/rust-lang/rust-analyzer/blob/a73a37a757a58b43a796d3eb86a1f7dfd0036659/crates/rust-analyzer/src/lsp/ext.rs#L425-L489
+// Taken from https://tvv.tw/https://github.com/rust-lang/rust-analyzer/blob/a73a37a757a58b43a796d3eb86a1f7dfd0036659/crates/rust-analyzer/src/lsp/ext.rs#L425-L489
 pub enum Runnables {}
 
 impl lsp::request::Request for Runnables {

@@ -4,7 +4,7 @@ use gpui::WeakEntity;
 use lsp::LanguageServer;
 
 use crate::LspStore;
-/// https://github.com/Microsoft/vscode/blob/main/extensions/json-language-features/server/README.md#schema-content-request
+/// https://tvv.tw/https://github.com/Microsoft/vscode/blob/main/extensions/json-language-features/server/README.md#schema-content-request
 ///
 /// Represents a "JSON language server-specific, non-standardized, extension to the LSP" with which the vscode-json-language-server
 /// can request the contents of a schema that is associated with a uri scheme it does not support.

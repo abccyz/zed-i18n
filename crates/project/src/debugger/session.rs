@@ -413,7 +413,7 @@ impl RunningMode {
     ) -> Task<Result<()>> {
         let raw = self.binary.request_args.clone();
 
-        // Of relevance: https://github.com/microsoft/vscode/issues/4902#issuecomment-368583522
+        // Of relevance: https://tvv.tw/https://github.com/microsoft/vscode/issues/4902#issuecomment-368583522
         let launch = match raw.request {
             dap::StartDebuggingRequestArgumentsRequest::Launch => self.request(Launch {
                 raw: raw.configuration,

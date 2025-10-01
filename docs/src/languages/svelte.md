@@ -1,9 +1,9 @@
 # Svelte
 
-Svelte support is available through the [Svelte extension](https://github.com/zed-extensions/svelte).
+Svelte support is available through the [Svelte extension](https://tvv.tw/https://github.com/zed-extensions/svelte).
 
-- Tree-sitter: [tree-sitter-grammars/tree-sitter-svelte](https://github.com/tree-sitter-grammars/tree-sitter-svelte)
-- Language Server: [sveltejs/language-tools](https://github.com/sveltejs/language-tools)
+- Tree-sitter: [tree-sitter-grammars/tree-sitter-svelte](https://tvv.tw/https://github.com/tree-sitter-grammars/tree-sitter-svelte)
+- Language Server: [sveltejs/language-tools](https://tvv.tw/https://github.com/sveltejs/language-tools)
 
 ## Extra theme styling configuration
 
@@ -70,4 +70,4 @@ To override these settings, use the following:
 }
 ```
 
-See [the TypeScript language server `package.json`](https://github.com/microsoft/vscode/blob/main/extensions/typescript-language-features/package.json) for more information.
+See [the TypeScript language server `package.json`](https://tvv.tw/https://github.com/microsoft/vscode/blob/main/extensions/typescript-language-features/package.json) for more information.

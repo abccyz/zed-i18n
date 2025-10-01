@@ -1,10 +1,10 @@
 # GDScript
 
-Godot [GDScript](https://gdscript.com/) language support in Zed is provided by the community-maintained [GDScript extension](https://github.com/grndctrl/zed-gdscript).
-Report issues to: [https://github.com/grndctrl/zed-gdscript/issues](https://github.com/grndctrl/zed-gdscript/issues)
+Godot [GDScript](https://gdscript.com/) language support in Zed is provided by the community-maintained [GDScript extension](https://tvv.tw/https://github.com/grndctrl/zed-gdscript).
+Report issues to: [https://tvv.tw/https://github.com/grndctrl/zed-gdscript/issues](https://tvv.tw/https://github.com/grndctrl/zed-gdscript/issues)
 
-- Tree-sitter: [PrestonKnopp/tree-sitter-gdscript](https://github.com/PrestonKnopp/tree-sitter-gdscript) and [PrestonKnopp/tree-sitter-godot-resource](https://github.com/PrestonKnopp/tree-sitter-godot-resource)
-- Language Server: [gdscript-language-server](https://github.com/godotengine/godot)
+- Tree-sitter: [PrestonKnopp/tree-sitter-gdscript](https://tvv.tw/https://github.com/PrestonKnopp/tree-sitter-gdscript) and [PrestonKnopp/tree-sitter-godot-resource](https://tvv.tw/https://github.com/PrestonKnopp/tree-sitter-godot-resource)
+- Language Server: [gdscript-language-server](https://tvv.tw/https://github.com/godotengine/godot)
 
 ## Setup
 

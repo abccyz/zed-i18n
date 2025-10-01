@@ -1,4 +1,4 @@
-/// Copied from https://github.com/neovim/neovim/blob/5fc25ecc7a383a4bed2199774ed2e26022456ca3/src/nvim/digraph.c#L65
+/// Copied from https://tvv.tw/https://github.com/neovim/neovim/blob/5fc25ecc7a383a4bed2199774ed2e26022456ca3/src/nvim/digraph.c#L65
 pub const DEFAULT_DIGRAPHS: &[(char, char, u32)] = &[
     ('N', 'U', 0x00),
     ('S', 'H', 0x01),

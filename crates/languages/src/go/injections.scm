@@ -1,4 +1,4 @@
-; Refer to https://github.com/nvim-treesitter/nvim-treesitter/blob/master/queries/go/injections.scm#L4C1-L16C41
+; Refer to https://tvv.tw/https://github.com/nvim-treesitter/nvim-treesitter/blob/master/queries/go/injections.scm#L4C1-L16C41
 (call_expression
   (selector_expression) @_function
   (#any-of? @_function

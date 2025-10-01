@@ -2,8 +2,8 @@
 
 C++ support is available natively in Zed.
 
-- Tree-sitter: [tree-sitter/tree-sitter-cpp](https://github.com/tree-sitter/tree-sitter-cpp)
-- Language Server: [clangd/clangd](https://github.com/clangd/clangd)
+- Tree-sitter: [tree-sitter/tree-sitter-cpp](https://tvv.tw/https://github.com/tree-sitter/tree-sitter-cpp)
+- Language Server: [clangd/clangd](https://tvv.tw/https://github.com/clangd/clangd)
 
 ## Binary
 

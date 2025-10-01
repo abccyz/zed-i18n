@@ -27,7 +27,8 @@ const RUST_TARGET: &str = "wasm32-wasip2";
 ///
 /// Once Clang 17 and its wasm target are available via system package managers, we won't need
 /// to download this.
-const WASI_SDK_URL: &str = "https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-25/";
+const WASI_SDK_URL: &str =
+    "https://tvv.tw/https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-25/";
 const WASI_SDK_ASSET_NAME: Option<&str> = if cfg!(all(target_os = "macos", target_arch = "x86_64"))
 {
     Some("wasi-sdk-25.0-x86_64-macos.tar.gz")
@@ -433,7 +434,7 @@ impl ExtensionBuilder {
     }
 
     // This was adapted from:
-    // https://github.com/bytecodealliance/wasm-tools/blob/e8809bb17fcf69aa8c85cd5e6db7cff5cf36b1de/src/bin/wasm-tools/strip.rs
+    // https://tvv.tw/https://github.com/bytecodealliance/wasm-tools/blob/e8809bb17fcf69aa8c85cd5e6db7cff5cf36b1de/src/bin/wasm-tools/strip.rs
     fn strip_custom_sections(&self, input: &Vec<u8>) -> Result<Vec<u8>> {
         use wasmparser::Payload::*;
 

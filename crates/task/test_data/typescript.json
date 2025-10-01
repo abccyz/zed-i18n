@@ -11,7 +11,7 @@
       // This is first because the actual "npm: build:tests" task
       // below has the same script value, and VS Code ignores labels
       // and deduplicates them.
-      // https://github.com/microsoft/vscode/issues/93001
+      // https://tvv.tw/https://github.com/microsoft/vscode/issues/93001
       "label": "gulp: tests",
       "type": "npm",
       "script": "build:tests:notypecheck",

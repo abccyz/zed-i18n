@@ -86,7 +86,7 @@ impl Github {
         }
 
         // TODO: detecting self hosted instances by checking whether "github" is in the url or not
-        // is not very reliable. See https://github.com/zed-industries/zed/issues/26393 for more
+        // is not very reliable. See https://tvv.tw/https://github.com/zed-industries/zed/issues/26393 for more
         // information.
         if !host.contains("github") {
             bail!("not a GitHub URL");
@@ -154,7 +154,7 @@ impl GitHostingProvider for Github {
 
     fn supports_avatars(&self) -> bool {
         // Avatars are not supported for self-hosted GitHub instances
-        // See tracking issue: https://github.com/zed-industries/zed/issues/11043
+        // See tracking issue: https://tvv.tw/https://github.com/zed-industries/zed/issues/11043
         &self.name == "GitHub"
     }
 
@@ -365,7 +365,7 @@ mod tests {
     #[test]
     fn test_parse_remote_url_given_https_url() {
         let parsed_remote = Github::public_instance()
-            .parse_remote_url("https://github.com/zed-industries/zed.git")
+            .parse_remote_url("https://tvv.tw/https://github.com/zed-industries/zed.git")
             .unwrap();
 
         assert_eq!(
@@ -407,7 +407,7 @@ mod tests {
             },
         );
 
-        let expected_url = "https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs";
+        let expected_url = "https://tvv.tw/https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs";
         assert_eq!(permalink.to_string(), expected_url.to_string())
     }
 
@@ -425,7 +425,7 @@ mod tests {
             },
         );
 
-        let expected_url = "https://github.com/zed-industries/zed/blob/b2efec9824c45fcc90c9a7eb107a50d1772a60aa/crates/zed/src/main.rs";
+        let expected_url = "https://tvv.tw/https://github.com/zed-industries/zed/blob/b2efec9824c45fcc90c9a7eb107a50d1772a60aa/crates/zed/src/main.rs";
         assert_eq!(permalink.to_string(), expected_url.to_string())
     }
 
@@ -443,7 +443,7 @@ mod tests {
             },
         );
 
-        let expected_url = "https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs#L7";
+        let expected_url = "https://tvv.tw/https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs#L7";
         assert_eq!(permalink.to_string(), expected_url.to_string())
     }
 
@@ -461,7 +461,7 @@ mod tests {
             },
         );
 
-        let expected_url = "https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs#L24-L48";
+        let expected_url = "https://tvv.tw/https://github.com/zed-industries/zed/blob/e6ebe7974deb6bb6cc0e2595c8ec31f0c71084b7/crates/editor/src/git/permalink.rs#L24-L48";
         assert_eq!(permalink.to_string(), expected_url.to_string())
     }
 
@@ -494,7 +494,7 @@ mod tests {
                 .unwrap()
                 .url
                 .as_str(),
-            "https://github.com/zed-industries/zed/pull/10687"
+            "https://tvv.tw/https://github.com/zed-industries/zed/pull/10687"
         );
 
         // Pull request number in middle of line, which we want to ignore

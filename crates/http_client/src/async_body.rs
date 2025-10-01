@@ -9,7 +9,7 @@ use futures::AsyncRead;
 use http_body::{Body, Frame};
 
 /// Based on the implementation of AsyncBody in
-/// <https://github.com/sagebind/isahc/blob/5c533f1ef4d6bdf1fd291b5103c22110f41d0bf0/src/body/mod.rs>.
+/// <https://tvv.tw/https://github.com/sagebind/isahc/blob/5c533f1ef4d6bdf1fd291b5103c22110f41d0bf0/src/body/mod.rs>.
 pub struct AsyncBody(pub Inner);
 
 pub enum Inner {

@@ -1,11 +1,11 @@
 # Erlang
 
-Erlang support is available through the [Erlang extension](https://github.com/zed-extensions/erlang).
+Erlang support is available through the [Erlang extension](https://tvv.tw/https://github.com/zed-extensions/erlang).
 
-- Tree-sitter: [WhatsApp/tree-sitter-erlang](https://github.com/WhatsApp/tree-sitter-erlang)
+- Tree-sitter: [WhatsApp/tree-sitter-erlang](https://tvv.tw/https://github.com/WhatsApp/tree-sitter-erlang)
 - Language Servers:
-  - [erlang-ls/erlang_ls](https://github.com/erlang-ls/erlang_ls)
-  - [WhatsApp/erlang-language-platform](https://github.com/WhatsApp/erlang-language-platform)
+  - [erlang-ls/erlang_ls](https://tvv.tw/https://github.com/erlang-ls/erlang_ls)
+  - [WhatsApp/erlang-language-platform](https://tvv.tw/https://github.com/WhatsApp/erlang-language-platform)
 
 ## Choosing a language server
 

@@ -4,7 +4,7 @@ use std::{collections::HashMap, sync::LazyLock};
 use crate::reference::Reference;
 
 // TODO: Consider implementing sliding window similarity matching like
-// https://github.com/sourcegraph/cody-public-snapshot/blob/8e20ac6c1460c08b0db581c0204658112a246eda/vscode/src/completions/context/retrievers/jaccard-similarity/bestJaccardMatch.ts
+// https://tvv.tw/https://github.com/sourcegraph/cody-public-snapshot/blob/8e20ac6c1460c08b0db581c0204658112a246eda/vscode/src/completions/context/retrievers/jaccard-similarity/bestJaccardMatch.ts
 //
 // That implementation could actually be more efficient - no need to track words in the window that
 // are not in the query.

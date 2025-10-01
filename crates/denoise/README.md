@@ -15,6 +15,6 @@ Trivial to build as it uses the native rust Candle crate for inference. Easy to 
 
 ## Acknowledgements & License
 
-The trained models in this repo are optimized versions of the models in the [breizhn/DTLN](https://github.com/breizhn/DTLN?tab=readme-ov-file#model-conversion-and-real-time-processing-with-onnx). These are licensed under MIT.
+The trained models in this repo are optimized versions of the models in the [breizhn/DTLN](https://tvv.tw/https://github.com/breizhn/DTLN?tab=readme-ov-file#model-conversion-and-real-time-processing-with-onnx). These are licensed under MIT.
 
-The FFT code was adapted from Datadog's [dtln-rs Repo](https://github.com/DataDog/dtln-rs/tree/main) also licensed under MIT.
+The FFT code was adapted from Datadog's [dtln-rs Repo](https://tvv.tw/https://github.com/DataDog/dtln-rs/tree/main) also licensed under MIT.

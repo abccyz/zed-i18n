@@ -220,9 +220,9 @@ function BuildInstaller {
         }
     }
 
-    # Windows runner 2022 default has iscc in PATH, https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md
+    # Windows runner 2022 default has iscc in PATH, https://tvv.tw/https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md
     # Currently, we are using Windows 2022 runner.
-    # Windows runner 2025 doesn't have iscc in PATH for now, https://github.com/actions/runner-images/issues/11228
+    # Windows runner 2025 doesn't have iscc in PATH for now, https://tvv.tw/https://github.com/actions/runner-images/issues/11228
     $innoSetupPath = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
     $definitions = @{
