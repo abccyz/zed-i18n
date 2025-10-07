@@ -7,6 +7,15 @@ Welcome to Zed, a high-performance, multiplayer code editor from the creators of
 
 ---
 
+**Logs:**
+#### 更新各类脚本并增加本地化支持
+- 修改了安装脚本中的URL和错误响应，以使用新域名。
+- 更新了Cargo.toml文件中的`async-tungstenite`依赖项版本。
+- 为Zed UI添加了一个新的本地化库，提供基础国际化支持。
+- 实现了语言偏好设置的翻译功能与管理。
+- 创建了一个性能监控工具箱以追踪系统资源使用情况。
+- 增加了对本地化和性能监控功能的测试。
+
 ### Installation
 
 On macOS and Linux you can [download Zed directly](https://zed.dev/download) or [install Zed via your local package manager](https://zed.dev/docs/linux#installing-via-a-package-manager).
